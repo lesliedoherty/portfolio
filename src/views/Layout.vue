@@ -1,9 +1,13 @@
 <template>
   <section>
 
-
+    <v-toolbar></v-toolbar>
     <main role="main" aria-labelledby="Label" class="main">
-      <router-view></router-view>
+     <v-container>
+       <router-view></router-view>
+     </v-container>
+   </main>
+   <v-footer></v-footer>
     </main>
 
   </section>
@@ -21,3 +25,7 @@
     }
   }
 </script>
+
+<style lang="stylus">
+  @import './../stylus/main.styl';
+</style>
