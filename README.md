@@ -1,5 +1,3 @@
-# portfolio
-
 > catapult vue portfolio
 
 ## Build Setup
