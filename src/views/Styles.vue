@@ -31,9 +31,8 @@
 
 
                 </article>
-        <article id="grid">
-            <header>Default Grid Example</header>
-        <div class="columns">
+
+        <article id="grid" class="columns">
           <div class="column is-three-quarters">
             <p class="notification is-info">
               <code class="html">is-three-quarters</code>
@@ -45,112 +44,33 @@
           <div class="column">
             <p class="notification is-danger">Auto</p>
           </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-two-thirds">
-            <p class="notification is-info">
-              <code class="html">is-two-thirds</code>
-            </p>
-          </div>
-          <div class="column">
-            <p class="notification is-warning">Auto</p>
-          </div>
-          <div class="column">
-            <p class="notification is-danger">Auto</p>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-half">
-            <p class="notification is-info">
-              <code class="html">is-half</code>
-            </p>
-          </div>
-          <div class="column">
-            <p class="notification is-warning">Auto</p>
-          </div>
-          <div class="column">
-            <p class="notification is-danger">Auto</p>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-one-third">
-            <p class="notification is-info">
-              <code class="html">is-one-third</code>
-            </p>
-          </div>
-          <div class="column">
-            <p class="notification is-success">Auto</p>
-          </div>
-          <div class="column">
-            <p class="notification is-warning">Auto</p>
-          </div>
-        </div>
-
-        <div class="columns">
-          <div class="column is-one-quarter">
-            <p class="notification is-info">
-              <code class="html">is-one-quarter</code>
-            </p>
-          </div>
-          <div class="column">
-            <p class="notification is-success">Auto</p>
-          </div>
-        </div>
         </article>
-        <article id="offsetEx">
-            <header>
-                <h1>Offsets</h1>
-            </header>
-            <div class="columns">
+        <article id="offsetEx" class="columns">
               <div class="column notification is-warning is-half is-offset-one-quarter">
                   <code>is-half is-offset-one-quarter</code>
               </div>
-            </div>
-
-            <div class="columns is-mobile">
-              <div class="column is-4 is-offset-8">
+        </article>
+        <article class="columns">
+              <div class="column notification is-4 is-offset-8">
                   <code>is-4 is-offset-8</code>
               </div>
-            </div>
-
-            <div class="columns is-mobile">
-              <div class="column is-11 is-offset-1"></div>
-            </div>
         </article>
-        <article id="multiline">
-            <header>
-                <h1>We will come back to this</h1>
-            </header>
-
-            <div class="columns is-multiline is-mobile">
+        <article class="columns">
+              <div class="column is-11 is-offset-1"></div>
+        </article>
+        <article id="multiline" class="columns multiline">
               <div class="column notification is-info is-one-quarter">
+                <code>is-one-quarter with notification</code>
+              </div>
+              <div class="notification is-warning column is-one-quarter">
+                <code>is-one-quarter with warning</code>
+              </div>
+              <div class="notification is-success column is-one-quarter">
                 <code>is-one-quarter</code>
               </div>
               <div class="notification column is-one-quarter">
                 <code>is-one-quarter</code>
               </div>
-              <div class="column is-one-quarter">
-                <code>is-one-quarter</code>
-              </div>
-              <div class="column is-one-quarter">
-                <code>is-one-quarter</code>
-              </div>
-              <div class="column is-half">
-                <code>is-half</code>
-              </div>
-              <div class="column is-one-quarter">
-                <code>is-one-quarter</code>
-              </div>
-              <div class="column is-one-quarter">
-                <code>is-one-quarter</code>
-              </div>
-              <div class="column notification is-info">
-                Auto
-              </div>
-            </div>
         </article>
 
       <project-item>
