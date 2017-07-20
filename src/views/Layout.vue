@@ -26,6 +26,6 @@
   }
 </script>
 
-<style lang="stylus">
-  @import './../stylus/main.styl';
+<style lang="sass">
+  @import './../assets/sass/main.sass';
 </style>

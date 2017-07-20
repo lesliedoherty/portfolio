@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "projects": {
+            "id": "/properties/projects",
+            "items": {
+                "id": "/properties/projects/items",
+                "properties": {
+                    "challenges": {
+                        "id": "/properties/projects/items/properties/challenges",
+                        "type": "string"
+                    },
+                    "description": {
+                        "id": "/properties/projects/items/properties/description",
+                        "type": "string"
+                    },
+                    "id": {
+                        "id": "/properties/projects/items/properties/id",
+                        "type": "integer"
+                    },
+                    "link": {
+                        "id": "/properties/projects/items/properties/link",
+                        "type": "string"
+                    },
+                    "media": {
+                        "id": "/properties/projects/items/properties/media",
+                        "items": {
+                            "id": "/properties/projects/items/properties/media/items",
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "name": {
+                        "id": "/properties/projects/items/properties/name",
+                        "type": "string"
+                    },
+                    "roll": {
+                        "id": "/properties/projects/items/properties/roll",
+                        "type": "string"
+                    },
+                    "solution": {
+                        "id": "/properties/projects/items/properties/solution",
+                        "type": "string"
+                    },
+                    "technology": {
+                        "id": "/properties/projects/items/properties/technology",
+                        "items": {
+                            "id": "/properties/projects/items/properties/technology/items",
+                            "type": "string"
+                        },
+                        "type": "array"
+                    },
+                    "testimonial": {
+                        "id": "/properties/projects/items/properties/testimonial",
+                        "items": {
+                            "id": "/properties/projects/items/properties/testimonial/items",
+                            "properties": {
+                                "name": {
+                                    "id": "/properties/projects/items/properties/testimonial/items/properties/name",
+                                    "type": "string"
+                                },
+                                "quote": {
+                                    "id": "/properties/projects/items/properties/testimonial/items/properties/quote",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}
