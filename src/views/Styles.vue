@@ -100,6 +100,58 @@
           </div>
         </div>
         </article>
+        <article id="offsetEx">
+            <header>
+                <h1>Offsets</h1>
+            </header>
+            <div class="columns">
+              <div class="column notification is-warning is-half is-offset-one-quarter">
+                  <code>is-half is-offset-one-quarter</code>
+              </div>
+            </div>
+
+            <div class="columns is-mobile">
+              <div class="column is-4 is-offset-8">
+                  <code>is-4 is-offset-8</code>
+              </div>
+            </div>
+
+            <div class="columns is-mobile">
+              <div class="column is-11 is-offset-1"></div>
+            </div>
+        </article>
+        <article id="multiline">
+            <header>
+                <h1>We will come back to this</h1>
+            </header>
+
+            <div class="columns is-multiline is-mobile">
+              <div class="column notification is-info is-one-quarter">
+                <code>is-one-quarter</code>
+              </div>
+              <div class="notification column is-one-quarter">
+                <code>is-one-quarter</code>
+              </div>
+              <div class="column is-one-quarter">
+                <code>is-one-quarter</code>
+              </div>
+              <div class="column is-one-quarter">
+                <code>is-one-quarter</code>
+              </div>
+              <div class="column is-half">
+                <code>is-half</code>
+              </div>
+              <div class="column is-one-quarter">
+                <code>is-one-quarter</code>
+              </div>
+              <div class="column is-one-quarter">
+                <code>is-one-quarter</code>
+              </div>
+              <div class="column notification is-info">
+                Auto
+              </div>
+            </div>
+        </article>
 
       <project-item>
 
