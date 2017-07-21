@@ -1,18 +1,20 @@
 <template>
     <section>
-        <article v-for="project in projects" v-bind:key="project.id" :class="project.class" class="project_item">
-            <div class="container" v-bind:style="{ 'background-image': 'url(' + project.media.preview + ')' }" >
+        <article v-for="project in projects" v-bind:key="project.id" :class="project.class" class="project_item" v-bind:style="{ 'background-image': 'url(' + project.media.preview + ')' }" >
+            <div class="container">
                 <h1 class="global_title">
                     {{ project.name }}
                 </h1>
                 <h2 class="global_subtitle">
                     {{ project.client }}
                 </h2>
-                <p>Description description {{ project.description }}</p>
-                <p>Do I want to label this as challenges? <br />
-                    {{ project.challenges }}</p>
-                <p>Do I want to label this as solutions? <br />
-                    {{ project.solution }}</p>
+
+                <h3 :id="'project_description_' + project.id">Description</h3>
+                <p :aria-labelledby="'project_description_' + project.id">{{ project.description }}</p>
+                <h3 :id="'project_challenges_' + project.id">Challenges</h3>
+                <p :aria-labelledby="'project_challenges_' + project.id">{{ project.challenges }}</p>
+                <h3 :id="'project_solution_' + project.id">Solution</h3>
+                <p>{{ project.solution }}</p>
 
                 <aside>
                 <dl>

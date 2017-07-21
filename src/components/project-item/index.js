@@ -8,17 +8,17 @@ export default {
           "class": [
             'project_item--image_right'
           ],
-          "name": "My Lincoln App",
+          "name": "MyLincoln App",
           "client": "INRIX",
           "roll": "Lead Front-end UI Developer",
           "link": "",
-          "description": "Strings Here",
-          "challenges": "More Words Here",
-          "solution": "Great Words Here",
+          "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
+          "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
+          "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
           "testimonial": [{
-            "name": "10th Doctor",
-            "quote": "There's something else I've always wanted to say: Allons-y, Alonso! You'll find a little picture of me there, and the caption'll read 'Over my dead body'.",
-            "link": "http://doctoripsum.com/"
+            "name": "Bill Shchwabel",
+            "quote": "This is really long and need to clean up so adding later",
+            "link": "https://www.linkedin.com/in/billschwebel/"
           },
             {
               "name": "another person",
@@ -33,22 +33,24 @@ export default {
             "./path/to/image3"
           ]},
           "technology": [
-            "Javascript",
-            "Vue.js",
-            "Bourbon",
-            "Adobe AEM"
+            "HTML",
+            "CSS",
+            "SASS",
+            "Backbone.js",
+            "Phonegap",
+            "Javascript"
           ]
         },
         {
           "id": 2,
-          "name": "HP Support Redesign",
-          "client": "HP",
+          "name": "Pappa Murphy\'s",
+          "client": "Deloitte",
           "class": [
             'project_item--image_left'
           ],
           "roll": "Front-end Architect at Deloitte Digital",
-          "link": "https://hp.support.com",
-          "description": "Strings Here",
+          "link": "https://pappamurphys.com",
+          "description": "Papa Murphy's pizza company worked with Deloitte to overhaul its website. My team was responsible for the UI and delivering built templates to the India-based back-end team for integration.",
           "challenges": "More Words Here",
           "solution": "Great Words Here",
           "testimonial": [{
@@ -65,19 +67,25 @@ export default {
           ]},
 
           "technology": [
-            "Javascript",
-            "Vue.js",
-            "Foundation"
+            "HTML",
+            "SASS",
+            "Jade",
+            "Bootstrap",
+            "Angular",
+            "Gulp",
+            "node",
+            "npm, bower"
           ]
         },
         {
           "id": 3,
-          "name": "Integris",
+          "name": "Integris Dashboard",
+          "client": "Integris",
           "roll": "Front-end Architect",
           "link": "https://integris.io",
-          "description": "Strings Here",
-          "challenges": "More Words Here",
-          "solution": "Great Words Here",
+          "description": " Integris required a front-end architect to develop a component-based styleguide based on design mockups, as well as structuring the right front-end framework to work with their API.",
+          "challenges": "The API was in flux and the developers were busy handling service side and were not as familiar with Front-End UI elements. A previous version had been put together in Angular but staff admitted knowledge of Angular was not their strong suit.",
+          "solution": "I created a component-based styleguide with plain HTML and CSS to build out pieces of the UI. We discussed options for frameworks and I created a vue.js project with routing and examples of components using the elements from the styleguide. The handoff process included training the developers on the UI side and getting them up to speed on the framework and base repo for future scaling and finishing implementation when the API was ready.",
           "class": [
             'project_item--image_center'
           ],
@@ -101,30 +109,29 @@ export default {
           "technology": [
             "Javascript",
             "Vue.js",
-            "Foundation"
+            "Foundation",
+            "node",
+            "npm",
+            "Webpack",
+            "SASS"
           ]
         },
         {
           "id": 4,
-          "name": "Wellsfargo EIT",
+          "name": "Multiple Vector Media Group Projects",
           "class": [
             'project_item--no-image'
           ],
-          "roll": "Front-end Architect",
+          "roll": "Lead Front-end Developer, Mentor, Advisor",
           "link": "",
-          "description": "Strings WellsFargo Here",
-          "challenges": "More Wells Words Here",
-          "solution": "Great Wells Words Here",
+          "description": "I still need the content to what I did here. Since I can't show the NDA Client, include the stuff with EL Education and the last two projects I helped with",
+          "challenges": "NDA NDA NDA",
+          "solution": "Words on request",
           "testimonial": [{
-            "name": "WellsFargo nice person",
-            "quote": "Wells Nice things they said about the project go here.",
-            "link": "http://doctoripsum.com/"
-          },
-            {
-              "name": "another person",
-              "quote": "two people said good things!",
-              "link": ''
-            }
+            "name": "Ben Smith: Director of Technology",
+            "quote": "Leslie is an extremely detailed and thoughtful frontend architect that dedicates herself to her craft. She takes the time and care required to fully understand project requirements and use cases. She excels at the \"human\" side of development as well, including leadership, empathy, and understanding user behavior. She deeply cares about her projects, and it shows in the final output.",
+            "link": "https://www.linkedin.com/in/benjaminsmithweb"
+          }
           ],
           "media": [
             "./path/to/image",
@@ -133,8 +140,12 @@ export default {
           ],
           "technology": [
             "Javascript",
-            "Vue.js",
-            "Foundation"
+            "Backbone.js",
+            "Bootstrap",
+            "node",
+            "npm, bower",
+            "Express Server",
+            "Jenkins"
           ]
         }
       ]
