@@ -2,8 +2,6 @@
 //  and set globals
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Vuetify from 'vuetify'
-// import App from './App'
 
 (function () {
   // Set up our global scope.
@@ -12,5 +10,4 @@ import Vuetify from 'vuetify'
   // Initialize Vue.
   window.Portfolio.Vue = Vue
   window.Portfolio.Vue.use(VueRouter)
-  window.Portfolio.Vue.use(Vuetify)
 })()

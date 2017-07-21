@@ -5,7 +5,11 @@ export default {
       projects: [
         {
           "id": 1,
-          "name": "Papa Murphy\"s",
+          "class": [
+            'background_white',
+            'image_right'
+          ],
+          "name": "Papa Murphy\'s",
           "roll": "Front-end Architect",
           "link": "https://papamurphys.com",
           "description": "Strings Here",
@@ -35,6 +39,10 @@ export default {
         {
           "id": 2,
           "name": "HP",
+          "class": [
+            'background_white',
+            'image_right'
+          ],
           "roll": "Front-end Architect",
           "link": "https://hp.support.com",
           "description": "Strings Here",
@@ -70,6 +78,10 @@ export default {
           "description": "Strings Here",
           "challenges": "More Words Here",
           "solution": "Great Words Here",
+          "class": [
+            'background_gray',
+            'image_bottom'
+          ],
           "testimonial": [{
             "name": "nice person",
             "quote": "Nice things they said about the project go here."
@@ -80,7 +92,7 @@ export default {
             }
           ],
           "media": {
-            "preview":  "/static/projects/pm-menu.png",
+            "preview":  "/static/projects/3/preview.jpgeg",
             "more" : [
             "./path/to/image2",
             "./path/to/image3"
@@ -94,6 +106,10 @@ export default {
         {
           "id": 4,
           "name": "Wellsfargo EIT",
+          "class": [
+            'background_white',
+            'image_right'
+          ],
           "roll": "Front-end Architect",
           "link": "",
           "description": "Strings WellsFargo Here",

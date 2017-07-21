@@ -28,10 +28,13 @@
     margin-bottom: 0.5em
     &:not(:first-child)
       margin-top: 1em
+    &.title
+      &:not(:last-child)
+        margin-bottom: 0
   h2
     font-size: $size-2
     margin-bottom: 0.5714em
-    &:not(:first-child)
+    &:not(:first-child):not(.subtitle)
       margin-top: 1.1428em
   h3
     font-size: $size-3
@@ -118,3 +121,18 @@
     font-size: $size-medium
   &.is-large
     font-size: $size-large
+  // titles
+  .title,
+  .subtitle
+    +block
+    word-break: break-word
+  .title
+    color: inherit
+    font-size: $title-size
+    font-weight: $title-weight
+    line-height: 1.125
+  .subtitle
+    color: inherit
+    font-size: $subtitle-size
+    font-weight: $subtitle-weight
+    line-height: 1.25

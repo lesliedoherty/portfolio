@@ -1,22 +1,40 @@
 ////////////////////////////////////////////////
+// 1. Initial Variables from Bulma
+// 2. Colors
+// 3. Typography
+// 4. Layout
+// 5. Navigation Bar
 ////////////////////////////////////////////////
-// 1. Initial variables// 1. Import the initial variables
-@import "initial-variables"
+// 1. Initial variables
+@import "./../../bulma/sass/utilities/initial-variables"
 
-// 2. Set your own initial variables
-// Update blue
+// 2. Colors
+
 $blue: #72d0eb
-// Add pink and its invert
+$blue-invert: #fff
 $pink: #ffb3b3
-$pink-invert: #fff
-// Add a serif family
-$family-serif: "Merriweather", "Georgia", serif
+$orange: #ffdfba
+$yellow: #ffffba
 
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink
-$primary-invert: $pink-invert
-// Use the existing orange as the danger color
-$danger: $orange
-// Use the new serif family
+$primary: $blue
+$primary-invert: $blue-invert
+$danger: $pink
+
+// 3. Typography (defined in base/content)
+$family-serif: "Merriweather", "Georgia", serif
 $family-primary: $family-serif
+
+$title-size:        $size-1 !default
+$title-weight:      $weight-light !default
+$title-weight-bold: $weight-semibold !default
+
+$subtitle-size:     $size-2 !default
+$subtitle-weight:   $weight-light !default
+
+// 4. Layout
+$padding_base: 3em 1.5em
+
+// 5. Navigation Bar
+$navbar-background: $orange !default
+$navbar-height: 3em
+

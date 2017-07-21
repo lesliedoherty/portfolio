@@ -1,16 +1,22 @@
 <template>
-  <article>
-    <ul v-for="project in projects" v-bind:key="project.id">
-      <li>{{ project.id }}</li>
-      <li>{{ project.name }}</li>
-      <li>{{ project.roll }}</li>
-      <li>{{ project.description }}</li>
-      <li>{{ project.challenges }}</li>
-      <li>{{ project.solution }}</li>
-      <li>{{ project.testimonial[0].name }}</li>
-      <li><img :src="project.media.preview" :alt="project.name" /></li>
-    </ul>
-  </article>
+  <section>
+    <article v-for="project in projects" v-bind:key="project.id" :class="project.class" class="portfolio_item">
+      <div class="container">
+            <h1 class="title no-margin-bottom">
+              {{ project.name }}
+            </h1>
+            <h2 class="subtitle">
+              {{ project.roll }}
+            </h2>
+        </div>
+
+      {{ project.description }}
+      {{ project.challenges }}
+      {{ project.solution }}
+      {{ project.testimonial[0].name }}
+      <img :src="project.media.preview" :alt="project.name" />
+    </article>
+  </section>
 </template>
 
 <script src='./index.js'></script>

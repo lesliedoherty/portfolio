@@ -1,15 +1,11 @@
 <template>
   <section>
 
-    <v-toolbar></v-toolbar>
-    <main role="main" aria-labelledby="Label" class="main">
-     <v-container>
+    <app-navigation></app-navigation>
+    <main role="main" aria-labelledby="Label" class="content">
        <router-view></router-view>
-     </v-container>
    </main>
-   <v-footer></v-footer>
-    </main>
-
+   <app-footer></app-footer>
   </section>
 </template>
 
