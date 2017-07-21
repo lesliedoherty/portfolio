@@ -1,0 +1,33 @@
+.project_item
+  align-items: stretch
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  border-bottom: 1px solid $grey-lighter
+  &:nth-child(even)
+    background-color: $background
+  &--tech-label, &--roll-label
+    display: inline
+  & dd, & dt
+      display: inline
+  &--tech, & dd
+    margin-left: $margin_xsxs_small
+    display: inline
+    margin-right: $margin_xsxs_small
+    li
+      display: inline
+      margin-right: $margin_xsxs_small / 2
+      &:not(:last-of-type):after
+          content: ";"
+  &--image_left
+    .container
+      background: no-repeat left/45%
+  &--image_right
+    .container
+      background: no-repeat bottom right/50%
+      align-self: flex-end
+  &--image_center
+    .container
+      background: no-repeat center bottom/80%
+  &--testimonial
+    display: none

@@ -6,12 +6,12 @@ export default {
         {
           "id": 1,
           "class": [
-            'background_white',
-            'image_right'
+            'project_item--image_right'
           ],
-          "name": "Papa Murphy\'s",
-          "roll": "Front-end Architect",
-          "link": "https://papamurphys.com",
+          "name": "My Lincoln App",
+          "client": "INRIX",
+          "roll": "Lead Front-end UI Developer",
+          "link": "",
           "description": "Strings Here",
           "challenges": "More Words Here",
           "solution": "Great Words Here",
@@ -27,7 +27,7 @@ export default {
             }
           ],
           "media": {
-            "preview":  "/static/projects/pm-menu.png",
+            "preview":  "/static/projects/ex2.png",
             "more" : [
             "./path/to/image2",
             "./path/to/image3"
@@ -41,12 +41,12 @@ export default {
         },
         {
           "id": 2,
-          "name": "HP",
+          "name": "HP Support Redesign",
+          "client": "HP",
           "class": [
-            'background_white',
-            'image_right'
+            'project_item--image_left'
           ],
-          "roll": "Front-end Architect",
+          "roll": "Front-end Architect at Deloitte Digital",
           "link": "https://hp.support.com",
           "description": "Strings Here",
           "challenges": "More Words Here",
@@ -58,7 +58,7 @@ export default {
           }
           ],
           "media": {
-            "preview":  "/static/projects/pm-menu.png",
+            "preview":  "/static/projects/ex1.png",
             "more" : [
             "./path/to/image2",
             "./path/to/image3"
@@ -79,8 +79,7 @@ export default {
           "challenges": "More Words Here",
           "solution": "Great Words Here",
           "class": [
-            'background_gray',
-            'image_bottom'
+            'project_item--image_center'
           ],
           "testimonial": [{
             "name": "nice person",
@@ -94,7 +93,7 @@ export default {
             }
           ],
           "media": {
-            "preview":  "/static/projects/3/preview.jpgeg",
+            "preview":  "/static/projects/ex3.png",
             "more" : [
             "./path/to/image2",
             "./path/to/image3"
@@ -109,8 +108,7 @@ export default {
           "id": 4,
           "name": "Wellsfargo EIT",
           "class": [
-            'background_white',
-            'image_right'
+            'project_item--no-image'
           ],
           "roll": "Front-end Architect",
           "link": "",
