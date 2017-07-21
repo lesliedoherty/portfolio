@@ -16,12 +16,14 @@ export default {
           "challenges": "More Words Here",
           "solution": "Great Words Here",
           "testimonial": [{
-            "name": "nice person",
-            "quote": "Nice things they said about the project go here."
+            "name": "10th Doctor",
+            "quote": "There's something else I've always wanted to say: Allons-y, Alonso! You'll find a little picture of me there, and the caption'll read 'Over my dead body'.",
+            "link": "http://doctoripsum.com/"
           },
             {
               "name": "another person",
-              "quote": "two people said good things!"
+              "quote": "two people said good things!",
+              "link": ''
             }
           ],
           "media": {
@@ -33,7 +35,8 @@ export default {
           "technology": [
             "Javascript",
             "Vue.js",
-            "Foundation"
+            "Bourbon",
+            "Adobe AEM"
           ]
         },
         {
@@ -49,13 +52,10 @@ export default {
           "challenges": "More Words Here",
           "solution": "Great Words Here",
           "testimonial": [{
-            "name": "nice person",
-            "quote": "Nice things they said about the project go here."
-          },
-            {
-              "name": "another person",
-              "quote": "two people said good things!"
-            }
+            "name": "11th Doctor",
+            "quote": "I never know why. I only know who. Bow ties are cool. Usually called 'The Doctor.' Or 'The Caretaker.' Or 'Get off this planet.' Though, strictly speaking, that probably isn't a name.",
+            "link": "http://doctoripsum.com/"
+          }
           ],
           "media": {
             "preview":  "/static/projects/pm-menu.png",
@@ -84,11 +84,13 @@ export default {
           ],
           "testimonial": [{
             "name": "nice person",
-            "quote": "Nice things they said about the project go here."
+            "quote": "Nice things they said about the project go here.",
+            "link": "http://doctoripsum.com/"
           },
             {
               "name": "another person",
-              "quote": "two people said good things!"
+              "quote": "two people said good things!",
+              "link":''
             }
           ],
           "media": {
@@ -117,11 +119,13 @@ export default {
           "solution": "Great Wells Words Here",
           "testimonial": [{
             "name": "WellsFargo nice person",
-            "quote": "Wells Nice things they said about the project go here."
+            "quote": "Wells Nice things they said about the project go here.",
+            "link": "http://doctoripsum.com/"
           },
             {
               "name": "another person",
-              "quote": "two people said good things!"
+              "quote": "two people said good things!",
+              "link": ''
             }
           ],
           "media": [

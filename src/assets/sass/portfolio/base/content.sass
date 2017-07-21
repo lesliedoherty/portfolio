@@ -28,13 +28,13 @@
     margin-bottom: 0.5em
     &:not(:first-child)
       margin-top: 1em
-    &.title
+    &.global_title
       &:not(:last-child)
         margin-bottom: 0
   h2
     font-size: $size-2
     margin-bottom: 0.5714em
-    &:not(:first-child):not(.subtitle)
+    &:not(:first-child):not(.global_subtitle)
       margin-top: 1.1428em
   h3
     font-size: $size-3
@@ -121,17 +121,18 @@
     font-size: $size-medium
   &.is-large
     font-size: $size-large
-  // titles
-  .title,
-  .subtitle
+  // global titles. specific title overrides happen in their component sass classes
+  // example: to override this in a project_item class, use .global_title.project_item--title
+  .global_title,
+  .global_subtitle
     +block
     word-break: break-word
-  .title
+  .global_title
     color: inherit
     font-size: $title-size
     font-weight: $title-weight
     line-height: 1.125
-  .subtitle
+  .global_subtitle
     color: inherit
     font-size: $subtitle-size
     font-weight: $subtitle-weight
