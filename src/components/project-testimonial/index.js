@@ -1,6 +1,6 @@
 export default {
   name: 'project-testimonial',
-  props: ['id', 'challenge'],
+  props: ['id', 'link', 'quote', 'name'],
   data () {
     return {
 

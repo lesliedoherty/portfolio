@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <dt id="'project_challenges_' + id">Challenges</dt>
-        <dd aria-labelledby="'project_challenges_' + id">{{ challenge }}</dd>
-    </div>
+        <blockquote :key="id" :cite="link" class="project_item--testimonial">
+            {{ quote }}
+            <cite>{{ name }}</cite>
+        </blockquote>
 </template>
 
 <script src='./index.js'></script>

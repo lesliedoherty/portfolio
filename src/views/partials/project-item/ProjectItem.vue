@@ -31,10 +31,12 @@
 
                 <aside>
                     <dl>
-                        <div>
-                            <dt class="project_item--roll-label" :id="'project_roll_' + project.id">Roll</dt>
-                            <dd class="project_item--roll-item" role="definition" :aria-labelledby="'project_roll_' + project.id">{{ project.roll }}</dd>
-                        </div>
+                        <project-item-description-list-item v-if="project.roll"
+                            label="Roll"
+                            :id="project.id"
+                            :content="project.roll"
+                        >
+                        </project-item-description-list-item>
                         <div>
                             <dt class="project_item--tech-label" :id="'project_tech_' + project.id">Tech</dt>
                             <dd class="project_item--tech" v-for="item in project.technology" :key="item" :aria-labelledby="'project_tech_' + project.id">{{ item }}</dd>
@@ -42,10 +44,14 @@
                     </dl>
                 </aside>
 
-                <blockquote v-for="item in project.testimonial" :key="project.id" :cite="item.link" class="project_item--testimonial">
-                    {{ item.quote }}
-                    <cite>{{ item.name }}</cite>
-                </blockquote>
+                <div v-if="project.testimonial[0]">
+                    <project-testimonial
+                        :id="project.id"
+                        :link="project.testimonial[0].link"
+                        :quote="project.testimonial[0].quote"
+                        :name="project.testimonial[0].name"
+                        ></project-testimonial>
+                </div>
             </div>
         </article>
     </section>
