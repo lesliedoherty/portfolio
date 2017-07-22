@@ -60,7 +60,12 @@
       background: no-repeat center bottom/55%
       padding-bottom: 20em
   &--testimonial
+    // by default we will hide the testimonies unless passing in a class that displays them so there's flexibility on where and when to display these
     display: none
+  &--display-testimony
+    // this should happen at the top level and cascade down to the blockquote class
+    .project_item--testimonial
+      display: block
   &--content
     div
       margin-bottom: $margin_small

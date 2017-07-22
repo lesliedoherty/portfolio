@@ -129,7 +129,8 @@ export default {
           "name": "Vector Media Group",
           "client": "",
           "class": [
-            'project_item--no-image'
+            'project_item--no-image',
+            'project_item--display-testimony'
           ],
           "roll": "Lead Front-end Developer, Mentor, Advisor",
           "link": "",
