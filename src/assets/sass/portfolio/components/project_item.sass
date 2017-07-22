@@ -6,10 +6,11 @@
   border-bottom: 1px solid $grey-lighter
   &:nth-child(even)
     background-color: $background
-  &--tech-label, &--roll-label
+  h2.global_subtitle.project_item--subtitle
+    color: $grey
+  h3, & dt
     display: inline
-  & dd, & dt
-      display: inline
+    font-weight: $weight-bold
   &--tech, & dd
     margin-left: $margin_xsxs_small
     display: inline
@@ -24,7 +25,13 @@
   &--image_right
       background: no-repeat bottom right/35%
       align-self: flex-end
+      .container > *
+        max-width: 60%
   &--image_center
       background: no-repeat center bottom/80%
   &--testimonial
     display: none
+  &--content
+    div
+      margin-bottom: $margin_small
+
