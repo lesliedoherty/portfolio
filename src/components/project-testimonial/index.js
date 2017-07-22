@@ -1,5 +1,5 @@
 export default {
-  name: 'project-item-challenge',
+  name: 'project-testimonial',
   props: ['id', 'challenge'],
   data () {
     return {

@@ -9,20 +9,24 @@
                 </project-item-header>
 
                 <dl class="project_item--content">
-                    <div>
-                        <dt :id="'project_description_' + project.id">Description</dt>
-                        <dd :aria-labelledby="'project_description_' + project.id">{{ project.description }}</dd>
-                    </div>
-                    <project-item-challenge v-if="project.challenges"
+                    <project-item-description-list-item v-if="project.description"
+                       label="Description"
                         :id="project.id"
-                        :challenge="project.challenges"
+                        :content="project.description"
                     >
-                    </project-item-challenge>
-                    <project-item-solution v-if="project.solution"
+                    </project-item-description-list-item>
+                    <project-item-description-list-item v-if="project.challenges"
+                        label="Challenges"
+                        :id="project.id"
+                        :content="project.challenges"
+                    >
+                    </project-item-description-list-item>
+                    <project-item-description-list-item v-if="project.solution"
+                        label="Solution"
                         :id="project.id"
                         :solution="project.solution"
                     >
-                    </project-item-solution>
+                    </project-item-description-list-item>
                 </dl>
 
                 <aside>
