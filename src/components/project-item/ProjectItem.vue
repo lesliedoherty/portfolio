@@ -13,10 +13,11 @@
                         <dt :id="'project_description_' + project.id">Description</dt>
                         <dd :aria-labelledby="'project_description_' + project.id">{{ project.description }}</dd>
                     </div>
-                    <div>
-                        <dt :id="'project_challenges_' + project.id">Challenges</dt>
-                        <dd :aria-labelledby="'project_challenges_' + project.id">{{ project.challenges }}</dd>
-                    </div>
+                    <project-item-challenge v-if="project.challenges"
+                        :id="project.id"
+                        :challenge="project.challenges"
+                    >
+                    </project-item-challenge>
                     <div>
                         <dt :id="'project_solution_' + project.id">Solution</dt>
                         <dd>{{ project.solution }}</dd>
