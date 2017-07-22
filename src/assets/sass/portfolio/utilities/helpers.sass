@@ -10,6 +10,15 @@
   width: 100%
   opacity: .9
   z-index: -1
+
+=clearfix()
+ &:before,
+ &:after
+    content: ""
+    display: table
+ &:after
+    clear: both
+
 .example-fill
   p
     padding: 1.25rem

@@ -4,43 +4,43 @@ export default {
     return {
       projects: [
         {
-          "id": 1,
-          "class": [
-            'project_item--image_right'
-          ],
-          "name": "MyLincoln App",
-          "client": "INRIX",
-          "roll": "Lead Front-end UI Developer",
-          "link": "",
-          "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
-          "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
-          "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
-          "testimonial": [{
-            "name": "Bill Shchwabel",
-            "quote": "This is really long and need to clean up so adding later",
-            "link": "https://www.linkedin.com/in/billschwebel/"
-          },
-            {
-              "name": "another person",
-              "quote": "two people said good things!",
-              "link": ''
-            }
-          ],
-          "media": {
-            "preview":  "/static/projects/ex2.png",
-            "more" : [
-            "./path/to/image2",
-            "./path/to/image3"
-          ]},
-          "technology": [
-            "HTML",
-            "CSS",
-            "SASS",
-            "Backbone.js",
-            "Phonegap",
-            "Javascript"
-          ]
-        },
+                  "id": 1,
+                  "class": [
+                    'project_item--image_right'
+                  ],
+                  "name": "MyLincoln App",
+                  "client": "INRIX",
+                  "roll": "Lead Front-end UI Developer",
+                  "link": "",
+                  "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
+                  "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
+                  "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
+                  "testimonial": [{
+                    "name": "Bill Shchwabel",
+                    "quote": "This is really long and need to clean up so adding later",
+                    "link": "https://www.linkedin.com/in/billschwebel/"
+                  },
+                    {
+                      "name": "another person",
+                      "quote": "two people said good things!",
+                      "link": ''
+                    }
+                  ],
+                  "media": {
+                    "preview":  "/static/projects/ex2.png",
+                    "more" : [
+                      "./path/to/image2",
+                      "./path/to/image3"
+                    ]},
+                  "technology": [
+                    "HTML",
+                    "CSS",
+                    "SASS",
+                    "Backbone.js",
+                    "Phonegap",
+                    "Javascript"
+                  ]
+                },
         {
           "id": 2,
           "name": "Pappa Murphy\'s",
@@ -60,11 +60,11 @@ export default {
           }
           ],
           "media": {
-            "preview":  "/static/projects/ex1.png",
+            "preview":  "/static/projects/pm/pm-preview.png",
             "more" : [
-            "./path/to/image2",
-            "./path/to/image3"
-          ]},
+              "./path/to/image2",
+              "./path/to/image3"
+            ]},
 
           "technology": [
             "HTML",
@@ -103,9 +103,9 @@ export default {
           "media": {
             "preview":  "/static/projects/ex3.png",
             "more" : [
-            "./path/to/image2",
-            "./path/to/image3"
-          ]},
+              "./path/to/image2",
+              "./path/to/image3"
+            ]},
           "technology": [
             "Javascript",
             "Vue.js",

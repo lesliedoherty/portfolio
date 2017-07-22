@@ -1,8 +1,4 @@
 .project_item
-  align-items: stretch
-  display: flex
-  flex-direction: column
-  justify-content: space-between
   border-bottom: 1px solid $grey-lighter
   position: relative
   z-index: 1
@@ -10,25 +6,34 @@
     background-color: $background
   h2.global_subtitle.project_item--subtitle
     color: $grey
-  h3, & dt
-    display: inline
+  dt
+    display: inline-block
     font-weight: $weight-bold
-  &--tech, & dd
+  dd
     margin-left: $margin_xsxs_small
-    display: inline
-    margin-right: $margin_xsxs_small
-    li
+    display: inline-block
+    &:not(:last-of-type):after
+      content: ","
+    +tablet
       display: inline
-      margin-right: $margin_xsxs_small / 2
-      &:not(:last-of-type):after
-          content: ","
   &--image_left
-      background: no-repeat left/35%
+    background: no-repeat bottom left/40%
+    +xs-only
+      padding-bottom: 6em
+    +xs-mobile
+      padding-bottom: 12em
+    +tablet
+      background: no-repeat bottom left/30%
+      padding-bottom: 10em
+      .container > *
+        max-width: 70%
+        margin-left: 25%
+    +desktop
+      padding-bottom: 0
   &--image_right
-      background: no-repeat bottom right/95%
-      &::after
-        +mobile()
-          +backgroundOverlay(white)
+      background: no-repeat bottom right/45%
+      +mobile()
+        padding-bottom: 8em
       +tablet
         background: no-repeat bottom right/35%
         .container > *

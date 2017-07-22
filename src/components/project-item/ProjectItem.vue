@@ -28,14 +28,15 @@
 
                 <aside>
                     <dl>
-                        <dt class="project_item--roll-label" :id="'project_roll_' + project.id">Roll</dt>
-                        <dd class="project_item--roll-item" role="definition" :aria-labelledby="'project_roll_' + project.id">{{ project.roll }}</dd>
+                        <div>
+                            <dt class="project_item--roll-label" :id="'project_roll_' + project.id">Roll</dt>
+                            <dd class="project_item--roll-item" role="definition" :aria-labelledby="'project_roll_' + project.id">{{ project.roll }}</dd>
+                        </div>
+                        <div>
+                            <dt class="project_item--tech-label" :id="'project_tech_' + project.id">Tech</dt>
+                            <dd class="project_item--tech" v-for="item in project.technology" :key="item" :aria-labelledby="'project_tech_' + project.id">{{ item }}</dd>
+                        </div>
                     </dl>
-
-                    <h3 class="project_item--tech-label" :id="'project_tech_' + project.id">Tech</h3>
-                    <ul class="project_item--tech" :aria-labelledby="'project_tech_' + project.id">
-                        <li v-for="item in project.technology" :key="item">{{ item }}</li>
-                    </ul>
                 </aside>
 
                 <blockquote v-for="item in project.testimonial" :key="project.id" :cite="item.link" class="project_item--testimonial">

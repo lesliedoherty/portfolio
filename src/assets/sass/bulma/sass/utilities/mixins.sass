@@ -188,6 +188,14 @@
   @media screen and (max-width: $device - 1px)
     @content
 
+=xs-only
+  @media screen and (max-width: $xs-mobile - 1px)
+      @content
+
+=xs-mobile
+  @media screen and (min-width: $xs-mobile) and (max-width: $tablet - 1px)
+    @content
+
 =mobile
   @media screen and (max-width: $tablet - 1px)
     @content
