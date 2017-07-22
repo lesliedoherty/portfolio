@@ -1,12 +1,14 @@
 <template>
   <footer role="contentinfo" class="footer">
     <section class="container">
-      <a class="navbar-item" href="https://github.com/lesliedoherty" target="_blank">
-        Github
-      </a>
-      <a class="navbar-item" href="https://twitter.com/mrsflinger" target="_blank">
-        Twitter
-      </a>
+      <div class="footer_links">
+        <a class="footer_links--item" href="https://github.com/lesliedoherty" target="_blank">
+          Github
+        </a>
+        <a class="footer_links--item" href="https://twitter.com/mrsflinger" target="_blank">
+          Twitter
+        </a>
+      </div>
     </section>
   </footer>
 </template>
