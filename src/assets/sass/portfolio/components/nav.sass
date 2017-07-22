@@ -2,6 +2,7 @@ nav
   background-color: $navbar-background
   min-height: $navbar-height
   position: relative
+  border-bottom: 1px solid $border
   & > .container
     display: flex
     justify-content: space-between
@@ -9,3 +10,8 @@ nav
     .nav_branding
       dt
         font-size: $size-1
+    .nav_links .nav_item
+      color: $nav-link-color
+      text-decoration: none
+      &:not(:last-of-type)
+        margin-right: $margin_small

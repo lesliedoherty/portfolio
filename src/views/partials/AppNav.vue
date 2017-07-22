@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <!-- I know this isn't a 'list' but I think it's sort of funny to do my name as a term with a description and by funny I mean patheticly dorky -->
+      <!-- Being a litte nerdy here but I like that you decided to see the code and find out what a nerd you're dealing with.  -->
       <dl class="nav_branding">
         <dt>Leslie Doherty</dt>
         <dd class="description">Front-end Architect</dd>
