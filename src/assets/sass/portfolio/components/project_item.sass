@@ -4,6 +4,8 @@
   flex-direction: column
   justify-content: space-between
   border-bottom: 1px solid $grey-lighter
+  position: relative
+  z-index: 1
   &:nth-child(even)
     background-color: $background
   h2.global_subtitle.project_item--subtitle
@@ -23,10 +25,14 @@
   &--image_left
       background: no-repeat left/35%
   &--image_right
-      background: no-repeat bottom right/35%
-      align-self: flex-end
-      .container > *
-        max-width: 60%
+      background: no-repeat bottom right/95%
+      &::after
+        +mobile()
+          +backgroundOverlay(white)
+      +tablet
+        background: no-repeat bottom right/35%
+        .container > *
+          max-width: 60%
   &--image_center
       background: no-repeat center bottom/80%
   &--testimonial
