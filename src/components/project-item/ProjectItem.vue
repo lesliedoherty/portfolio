@@ -2,14 +2,11 @@
     <section>
         <article v-for="project in projects" v-bind:key="project.id" :class="project.class" class="project_item" v-bind:style="{ 'background-image': 'url(' + project.media.preview + ')' }" >
             <div class="container">
-                <header class="project_item--header">
-                    <h1 class="global_title">
-                        {{ project.name }}
-                    </h1>
-                    <h2 class="global_subtitle project_item--subtitle">
-                        {{ project.client }}
-                    </h2>
-                </header>
+                <project-item-header
+                    :name="project.name"
+                    :client="project.client"
+                >
+                </project-item-header>
 
                 <dl class="project_item--content">
                     <div>

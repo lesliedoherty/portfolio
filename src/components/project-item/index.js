@@ -1,5 +1,10 @@
+import ProjectItemHeader from '@/components/project-item-header/ProjectItemHeader'
+
 export default {
   name: 'project-item',
+  components: {
+    "project-item-header": ProjectItemHeader
+  },
   data () {
     return {
       projects: [
@@ -118,16 +123,16 @@ export default {
         },
         {
           "id": 4,
-          "name": "Multiple Projects",
-          "client": "Vector Media Group",
+          "name": "Vector Media Group",
+          "client": "",
           "class": [
             'project_item--no-image'
           ],
           "roll": "Lead Front-end Developer, Mentor, Advisor",
           "link": "",
-          "description": "I still need the content to what I did here. Since I can't show the NDA Client, include the stuff with EL Education and the last two projects I helped with",
-          "challenges": "NDA NDA NDA",
-          "solution": "Words on request",
+          "description": "Vector Media Group is a New York web agency and Premier Google Partner with a strong focus on digital marketing and SEO. The majority of my time there was spent working on large API-powered Node applications.",
+          "challenges": "",
+          "solution": "",
           "testimonial": [{
             "name": "Ben Smith: Director of Technology",
             "quote": "Leslie is an extremely detailed and thoughtful frontend architect that dedicates herself to her craft. She takes the time and care required to fully understand project requirements and use cases. She excels at the \"human\" side of development as well, including leadership, empathy, and understanding user behavior. She deeply cares about her projects, and it shows in the final output.",
