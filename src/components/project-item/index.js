@@ -48,7 +48,7 @@ export default {
           "class": [
             'project_item--image_left'
           ],
-          "roll": "Front-end Architect at Deloitte Digital",
+          "roll": "Front-end Architect and Lead Developer for global team",
           "link": "https://pappamurphys.com",
           "description": "Papa Murphy's pizza company worked with Deloitte to overhaul its website. My team was responsible for the UI and delivering built templates to the India-based back-end team for integration.",
           "challenges": "More Words Here",
@@ -81,7 +81,7 @@ export default {
           "id": 3,
           "name": "Integris Dashboard",
           "client": "Integris",
-          "roll": "Front-end Architect",
+          "roll": "Front-end Architect and Advisor",
           "link": "https://integris.io",
           "description": " Integris required a front-end architect to develop a component-based styleguide based on design mockups, as well as structuring the right front-end framework to work with their API.",
           "challenges": "The API was in flux and the developers were busy handling service side and were not as familiar with Front-End UI elements. A previous version had been put together in Angular but staff admitted knowledge of Angular was not their strong suit.",
@@ -101,7 +101,7 @@ export default {
             }
           ],
           "media": {
-            "preview":  "/static/projects/ex3.png",
+            "preview":  "/static/projects/integris/integris-preview.png",
             "more" : [
               "./path/to/image2",
               "./path/to/image3"

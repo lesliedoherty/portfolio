@@ -2,6 +2,7 @@
   border-bottom: 1px solid $grey-lighter
   position: relative
   z-index: 1
+  transition: all 500ms ease
   &:nth-child(even)
     background-color: $background
   h2.global_subtitle.project_item--subtitle
@@ -39,7 +40,25 @@
         .container > *
           max-width: 60%
   &--image_center
-      background: no-repeat center bottom/80%
+    header
+      text-align: center
+    background: no-repeat center bottom/85%
+    +xs-only
+      padding-bottom: 7em
+    +xs-mobile
+      padding-bottom: 13em
+    +tablet-only
+      // Dear Future Me, I know this is ridiculous to have to be so specific at breakpoints. TODO Fix this
+      padding-bottom: 16em
+    +desktop
+      background: no-repeat center bottom/75%
+      padding-bottom: 18em
+      .project_item--content
+        column-count: 2
+        column-gap: $padding_base
+    +widescreen
+      background: no-repeat center bottom/55%
+      padding-bottom: 20em
   &--testimonial
     display: none
   &--content
