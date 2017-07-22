@@ -1,6 +1,6 @@
 import VueRouter from 'vue-router'
 import Hello from '@/views/partials/Hello'
-import Styles from '@/views/Styles'
+import Styles from '@/views/partials/styleguide/Styles'
 
 let router = new VueRouter({
   routes: [

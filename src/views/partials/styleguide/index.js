@@ -1,4 +1,4 @@
-import ProjectItem from '@/components/project-item/ProjectItem'
+import ProjectItem from '@/views/partials/project-item/ProjectItem'
 import Grid from '@/components/grid/Grid'
 export default {
   name: 'styles',
@@ -8,7 +8,7 @@ export default {
   },
   data () {
     return {
-      msg: 'Styles and Components',
+      msg: 'Styles and Components'
     }
   }
 }

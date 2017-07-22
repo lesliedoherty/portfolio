@@ -18,10 +18,11 @@
                         :challenge="project.challenges"
                     >
                     </project-item-challenge>
-                    <div>
-                        <dt :id="'project_solution_' + project.id">Solution</dt>
-                        <dd>{{ project.solution }}</dd>
-                    </div>
+                    <project-item-solution v-if="project.solution"
+                        :id="project.id"
+                        :solution="project.solution"
+                    >
+                    </project-item-solution>
                 </dl>
 
                 <aside>

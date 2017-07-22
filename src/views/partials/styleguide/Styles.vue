@@ -28,5 +28,5 @@
     </section>
 </template>
 
-<script src='./partials/styleguide/index.js'></script>
+<script src='./index.js'></script>
 

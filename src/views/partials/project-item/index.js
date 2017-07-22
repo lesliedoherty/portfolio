@@ -1,11 +1,12 @@
 import ProjectItemHeader from '@/components/project-item-header/ProjectItemHeader'
 import ProjectItemChalleng from '@/components/project-item-challenge/ProjectItemChallenge'
-
+import ProjectItemSolution from '@/components/project-item-solution/ProjectItemSolution'
 export default {
   name: 'project-item',
   components: {
     "project-item-header": ProjectItemHeader,
-    "project-item-challenge": ProjectItemChalleng
+    "project-item-challenge": ProjectItemChalleng,
+    "project-item-solution": ProjectItemSolution
   },
   data () {
     return {
