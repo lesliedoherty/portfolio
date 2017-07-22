@@ -24,7 +24,7 @@
                     <project-item-description-list-item v-if="project.solution"
                         label="Solution"
                         :id="project.id"
-                        :solution="project.solution"
+                        :content="project.solution"
                     >
                     </project-item-description-list-item>
                 </dl>
