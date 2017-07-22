@@ -118,7 +118,8 @@ export default {
         },
         {
           "id": 4,
-          "name": "Multiple Vector Media Group Projects",
+          "name": "Multiple Projects",
+          "client": "Vector Media Group",
           "class": [
             'project_item--no-image'
           ],
