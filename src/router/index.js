@@ -1,13 +1,13 @@
 import VueRouter from 'vue-router'
-import Hello from '@/views/partials/Hello'
+import Landing from '@/views/partials/landing/Landing'
 import Styles from '@/views/partials/styleguide/Styles'
 
 let router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Landing',
+      component: Landing
     },
     {
       path: '/styleguide',
