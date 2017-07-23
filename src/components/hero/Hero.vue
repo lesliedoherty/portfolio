@@ -2,7 +2,7 @@
   <section class="hero header">
     <div class="hero-body">
       <div class="container">
-        <p>Please tell me I didn't get old. Anything but old. I was young! Oh... is he grey? It's a fez. I wear a fez now. Fezzes are cool. I never know why. I only know who. Brave heart, Clara. Yes, well, it's a brilliant noise.</p>
+        <p>This content is still under refinement. I'd like to link to the <router-link to="/styleguide">styleguide here as an example of how I work</router-link>.</p>
       </div>
     </div>
   </section>

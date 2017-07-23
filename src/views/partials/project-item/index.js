@@ -138,7 +138,7 @@ export default {
           ],
           "roll": "Lead Front-end Developer, Mentor, Advisor",
           "link": "",
-          "description": "Vector Media Group is a New York web agency and Premier Google Partner with a strong focus on digital marketing and SEO. The majority of my time there was spent working on large API-powered Node applications. In addition to development, I also advised on the front-end restructuring for a lorpem ipsum come back to this because I need to be sure I have the facts right ",
+          "description": "Vector Media Group is a New York web agency and Premier Google Partner with a strong focus on digital marketing and SEO. The majority of my time there was spent working on large API-powered Node applications. In addition to development, I also advised on the front-end architecture for a revamp of the award winning EL Education website.",
 
           "challenges": "Most clients are under NDA. Information is available on request.",
           "solution": "",

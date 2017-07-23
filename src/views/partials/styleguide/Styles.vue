@@ -30,9 +30,20 @@
             </header>
             <div class="component_usage">
                 <p>Based on the animation property in the media object. Example Below:</p>
-                <p><code>
+                <p>The conditional is used inside the for project loop.
+                    <code>
                     v-if="project.media.animation"
-                </code>
+                    </code>
+                </p>
+                <p>Next we evaluate the kind of animation frame we are using:
+                    <code>
+                        v-if="project.media.animation.frame === 'iPad'
+                    </code>
+                </p>
+                <p>Finally we pass the correct props to the component:
+                    <code>
+                        :image="project.media.animation.image"
+                    </code>
                 </p>
             </div>
         </article>
