@@ -5,6 +5,10 @@
   transition: all 500ms ease
   &:nth-child(even)
     background-color: $background
+  &--header.container
+    padding-bottom: 0
+  .container:not(.project_item--header)
+    padding-top: $padding_small
   h2.global_subtitle.project_item--subtitle
     color: $grey
   dt
@@ -17,6 +21,24 @@
       content: ","
     +tablet
       display: inline
+  &--two-col-all
+    +tablet
+      .container
+            column-count: 2
+            column-gap: $padding_base
+            aside
+              break-inside: avoid
+              -webkit-column-break-inside: avoid
+              column-break-inside: avoid
+              page-break-inside: avoid
+              break-after: always
+            blockquote
+
+  &--two-col-content
+      +tablet
+        .project_item--content
+              column-count: 2
+              column-gap: $padding_base
   &--image_left
     background: no-repeat bottom left/40%
     +xs-only
@@ -53,9 +75,6 @@
     +desktop
       background: no-repeat center bottom/75%
       padding-bottom: 18em
-      .project_item--content
-        column-count: 2
-        column-gap: $padding_base
     +widescreen
       background: no-repeat center bottom/55%
       padding-bottom: 20em

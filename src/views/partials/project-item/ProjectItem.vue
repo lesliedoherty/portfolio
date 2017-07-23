@@ -1,12 +1,13 @@
 <template>
     <section>
         <article v-for="project in projects" v-bind:key="project.id" :class="project.class" class="project_item" v-bind:style="{ 'background-image': 'url(' + project.media.preview + ')' }" >
+            <project-item-header
+                :name="project.name"
+                :client="project.client"
+            >
+            </project-item-header>
+
             <div class="container">
-                <project-item-header
-                    :name="project.name"
-                    :client="project.client"
-                >
-                </project-item-header>
 
                 <dl class="project_item--content">
                     <project-item-description-list-item v-if="project.description"
