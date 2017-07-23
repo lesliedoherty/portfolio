@@ -1,5 +1,6 @@
 export default {
-  name: 'hero',
+  name: 'project-ipad',
+  props: ['id', 'image'],
   data () {
     return {
 

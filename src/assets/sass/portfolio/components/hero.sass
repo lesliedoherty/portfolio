@@ -2,12 +2,19 @@
   color: $hero-color
   background: $hero-background
   position: relative
-  min-height: $hero-height
   .container
+    display: flex
+    justify-content: center
+    flex-direction: column
+    min-height: $hero-height - 6em
     p
       font-size: $size-2
-    +tablet
+    +desktop
+      min-height: $hero-height
       background: no-repeat bottom right url('/static/base/me-young.png')
       p
-       width: 55%
+       width: 75%
        font-size: $size-1
+    +fullhd
+      p
+        width: 55%

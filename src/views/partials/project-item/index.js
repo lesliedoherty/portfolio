@@ -1,12 +1,14 @@
 import ProjectItemHeader from '@/components/project-item-header/ProjectItemHeader'
 import ProjectItemDescriptionListItem from '@/components/project-item-description-list-item/ProjectItemDescriptionListItem'
 import ProjectTestimonial from '@/components/project-testimonial/ProjectTestimonial'
+import ProjectIPad from '@/components/project-iPad/ProjectIPad'
 export default {
   name: 'project-item',
   components: {
     "project-item-header": ProjectItemHeader,
     "project-item-description-list-item": ProjectItemDescriptionListItem,
-    "project-testimonial": ProjectTestimonial
+    "project-testimonial": ProjectTestimonial,
+    "project-ipad": ProjectIPad
   },
   data () {
     return {
@@ -95,24 +97,24 @@ export default {
           "challenges": "The API was in flux and the developers were busy handling service side and were not as familiar with Front-End UI elements. A previous version had been put together in Angular but staff admitted knowledge of Angular was not their strong suit.",
           "solution": "I created a component-based styleguide with plain HTML and CSS to build out pieces of the UI. We discussed options for frameworks and I created a vue.js project with routing and examples of components using the elements from the styleguide. The handoff process included training the developers on the UI side and getting them up to speed on the framework and base repo for future scaling and finishing implementation when the API was ready.",
           "class": [
-            'project_item--image_center',
+            'project_item--animation_center',
             'project_item--two-col-content'
           ],
           "testimonial": [{
             "name": "nice person",
             "quote": "Nice things they said about the project go here.",
             "link": "http://doctoripsum.com/"
-          },
-            {
-              "name": "another person",
-              "quote": "two people said good things!",
-              "link":''
-            }
+          }
           ],
           "media": {
-            "preview":  "/static/projects/integris/integris-preview.png",
+            "preview":  "",
+            "animation":
+            {
+              "frame": "iPad",
+              "image": "/static/projects/integris/integris_styles.png"
+            },
             "more" : [
-              "./path/to/image2",
+              "/static/projects/integris/integris-preview.png",
               "./path/to/image3"
             ]},
           "technology": [
@@ -146,11 +148,7 @@ export default {
             "link": "https://www.linkedin.com/in/benjaminsmithweb"
           }
           ],
-          "media": [
-            "./path/to/image",
-            "./path/to/image2",
-            "./path/to/image3"
-          ],
+          "media": [],
           "technology": [
             "Javascript",
             "Backbone.js",

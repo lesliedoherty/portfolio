@@ -54,6 +54,16 @@
                         ></project-testimonial>
                 </div>
             </div>
+            <template v-if="project.media.animation">
+                <template v-if="project.media.animation.frame === 'iPad'">
+                <div class="container animation--iPad">
+                <project-ipad
+                :image="project.media.animation.image"
+                ></project-ipad>
+                </div>
+                </template>
+
+            </template>
         </article>
     </section>
 </template>
