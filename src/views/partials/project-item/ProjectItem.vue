@@ -62,7 +62,13 @@
                 ></project-tablet>
                 </div>
                 </template>
-
+                <template v-if="project.media.animation.frame === 'macbook'">
+                <div class="container animation--macbook">
+                <project-macbook
+                :image="project.media.animation.image"
+                ></project-macbook>
+                </div>
+                </template>
             </template>
         </article>
     </section>
