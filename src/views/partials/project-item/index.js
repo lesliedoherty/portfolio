@@ -73,7 +73,13 @@ export default {
           }
           ],
           "media": {
-            "preview":  "/static/projects/pm/pm-preview.png",
+            "preview":  "",
+            "animation":
+            {
+              "frame": "macbook",
+              "image": "/static/projects/pm/pm-preview-mov.gif",
+              "mobile": "/static/projects/pm/pm-preview.png"
+            },
             "more" : [
               "./path/to/image2",
               "./path/to/image3"
