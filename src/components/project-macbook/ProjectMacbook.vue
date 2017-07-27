@@ -1,6 +1,6 @@
 <template>
-    <div class="ipad" v-bind:style="{ 'background-image': 'url(' + image + ')' }">
-        <img src="/static/base/ipad-frame.png" />
+    <div class="macbook" v-bind:style="{ 'background-image': 'url(' + image + ')' }">
+        <img src="/static/base/macbook-frame.png" />
     </div>
 </template>
 

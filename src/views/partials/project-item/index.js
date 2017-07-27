@@ -120,7 +120,8 @@ export default {
             "animation":
             {
               "frame": "iPad",
-              "image": "/static/projects/integris/integris_styles.png"
+              "image": "/static/projects/integris/integris_styles.png",
+              "mobile": "/static/projects/integris/integris-preview.png"
             },
             "more" : [
               "/static/projects/integris/integris-preview.png",
