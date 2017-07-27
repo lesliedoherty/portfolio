@@ -1,7 +1,21 @@
 .hero.header
   color: $hero-color
-  background: $hero-background
+  //background: $hero-background
   position: relative
+  &.wales
+      background: no-repeat top right url('/static/base/wales-header.jpg')
+      background-size: cover
+      .container
+        p
+          border-radius: $radius
+          background: rgba(255,255,255,0.6)
+  &.default
+    background: $hero-background
+    .container
+      +desktop
+        background: no-repeat bottom right url('/static/base/me-young.png')
+
+
   .container
     display: flex
     justify-content: center
@@ -9,9 +23,9 @@
     min-height: $hero-height - 6em
     p
       font-size: $size-2
+      padding: $padding_small
     +desktop
       min-height: $hero-height
-      background: no-repeat bottom right url('/static/base/me-young.png')
       p
        width: 75%
        font-size: $size-1

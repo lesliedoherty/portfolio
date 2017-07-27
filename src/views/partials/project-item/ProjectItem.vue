@@ -57,9 +57,9 @@
             <template v-if="project.media.animation">
                 <template v-if="project.media.animation.frame === 'iPad'">
                 <div class="container animation--iPad">
-                <project-ipad
+                <project-tablet
                 :image="project.media.animation.image"
-                ></project-ipad>
+                ></project-tablet>
                 </div>
                 </template>
 

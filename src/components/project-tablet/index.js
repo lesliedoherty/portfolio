@@ -1,5 +1,5 @@
 export default {
-  name: 'project-ipad',
+  name: 'project-tablet',
   props: ['id', 'image'],
   data () {
     return {

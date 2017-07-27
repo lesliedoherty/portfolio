@@ -32,7 +32,7 @@
                 <p>Based on the animation property in the media object. Example Below:</p>
                 <p>The conditional is used inside the for project loop.
                     <code>
-                    v-if="project.media.animation"
+                        v-if="project.media.animation"
                     </code>
                 </p>
                 <p>Next we evaluate the kind of animation frame we are using:
@@ -47,12 +47,38 @@
                 </p>
             </div>
         </article>
-            <div class="container animation--iPad">
+        <div class="container animation--iPad">
             <project-ipad
-                image="/static/docs/scrollingEx.png"
+                    image="/static/docs/scrollingEx.png"
             ></project-ipad>
-             </div>
-        <hero></hero>
+        </div>
+        <article class="container">
+            <header>
+                <h1>Hero Component</h1>
+                <p>Can't decide between these two backgrounds so here are options</p>
+            </header>
+            <div class="component_usage">
+                <p>Based on the class used when embedding the component.</p>
+                <p>Pass in the following when used to see the picture from Wales:
+                    <code>
+                        class="wales"
+                    </code>
+                </p>
+                <p>Or for the Old Photo Of Me:
+                    <code>
+                        class="default"
+                    </code>
+                </p>
+            </div>
+        </article>
+        <hero
+                heroClass="wales"
+        >
+        </hero>
+        <hero
+                heroClass="default"
+        >
+        </hero>
         <grid></grid>
         <project-item></project-item>
     </section>

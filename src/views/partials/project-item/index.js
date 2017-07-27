@@ -1,14 +1,14 @@
 import ProjectItemHeader from '@/components/project-item-header/ProjectItemHeader'
 import ProjectItemDescriptionListItem from '@/components/project-item-description-list-item/ProjectItemDescriptionListItem'
 import ProjectTestimonial from '@/components/project-testimonial/ProjectTestimonial'
-import ProjectIPad from '@/components/project-iPad/ProjectIPad'
+import ProjectTablet from '@/components/project-tablet/ProjectTablet'
 export default {
   name: 'project-item',
   components: {
     "project-item-header": ProjectItemHeader,
     "project-item-description-list-item": ProjectItemDescriptionListItem,
     "project-testimonial": ProjectTestimonial,
-    "project-ipad": ProjectIPad
+    "project-tablet": ProjectTablet
   },
   data () {
     return {
@@ -162,7 +162,8 @@ export default {
         {
                "id": 5,
                "class": [
-                 'project_item--image_left'
+                 'project_item--image_left',
+                 'project_item--image_left--bottom'
                ],
                "name": "HP Support",
                "client": "Deloitte",

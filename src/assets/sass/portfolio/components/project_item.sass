@@ -46,13 +46,17 @@
     +xs-mobile
       padding-bottom: 12em
     +tablet
-      background: no-repeat bottom left/30%
+      background: no-repeat center left/30%
       padding-bottom: 10em
       .container > *
         max-width: 70%
         margin-left: 27%
     +desktop
       padding-bottom: 0
+    &--bottom
+      background: no-repeat bottom left/40%
+      +tablet
+            background: no-repeat bottom left/30%
   &--image_right
       background: no-repeat bottom right/45%
       +mobile()
