@@ -19,17 +19,19 @@
       content: ","
     +tablet
       display: inline
+  & > .container
+    +tablet
+      margin: auto 10%
   &--two-col-all
     +tablet
       justify-content: center
       display: flex
       .container
-         min-width: 55%
+         min-width: 40%
+         width: 40%
+         margin-right: 5%
       .project_item--testimonial-wrapper
-        display: flex
-        flex-direction: column
-        justify-content: center
-        min-width: 45%
+        min-width: 40%
   &--two-col-content
       +tablet
         .project_item--content
@@ -39,39 +41,55 @@
     +tablet
       display: flex
       .container
-        min-width: 65%
-        flex: 2 0 0
+        min-width: 55%
+        width: 55%
 
   &--image_left
     +tablet
       flex-direction: row-reverse
     &--bottom
       +tablet
+        .container
+          margin-left: auto
         .project_item--preview
           align-self: flex-end
+          max-width: $space_base * 10
 
   &--image_right
+    +until($tablet)
+      .project_item--preview
+        text-align: right
     +tablet
+      .container
+        margin-right: auto
       .project_item--preview
         justify-content: flex-end
+        max-width: $space_base * 10
 
   &--preview
-    margin-bottom: 0
+    margin-bottom: -($margin_xs_small / 2)
     z-index: 0
     +tablet
       display: flex
-      flex: 1 0 0
+      margin-bottom: 0
       .project_item--preview-item
         align-self: flex-end
 
-
-  &--testimonial
+  &--testimonial-wrapper
     // by default we will hide the testimonies unless passing in a class that displays them so there's flexibility on where and when to display these
     display: none
+    visibility: hidden
   &--display-testimony
     // this should happen at the top level and cascade down to the blockquote class
-    .project_item--testimonial
+    .project_item--testimonial-wrapper
+      visibility: visible
       display: block
+      +tablet
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin: auto 10% auto auto
+
   &--content
     div
       margin-bottom: $margin_small

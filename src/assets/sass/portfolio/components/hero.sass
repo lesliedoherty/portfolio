@@ -1,20 +1,39 @@
 .hero.header
   color: $hero-color
-  //background: $hero-background
   position: relative
+  padding: $hero-spacing
+  min-height: $hero-height
+  display: flex
+  flex-direction: column
+  justify-content: center
+  .hero-body
+    padding: $hero-spacing / 2
+    font-size: $size-2
+    +tablet
+      max-width: 35%
+      margin-left: 10%
+  &.wales, &.bc
+    .hero-body
+      .highlight span
+        line-height: $hero-spacing
+        background-color: $hero-text-background
+        color: $hero-text-color-on-background
+        padding-left: 0
+        position: relative
+        left: $hero-spacing / 2
+        box-shadow: $hero-spacing*+0.5 0 0 $hero-text-background, $hero-spacing*-0.5 0 0 $hero-text-background
+        a
+          color: $hero-link-color
+          border-bottom: 1px solid $hero-link-color
   &.wales
-      background: no-repeat top right url('/static/base/wales-header.jpg')
-      background-size: cover
-      .container
-        p
-          border-radius: $radius
-          background: rgba(255,255,255,0.6)
+    background: no-repeat top right url('/static/base/wales-header.jpg')
+    background-size: cover
+  &.bc
+    background: no-repeat bottom right url('/static/base/owen-blue-hill-header.jpg')
+    background-size: cover
   &.default
-    background: $hero-background
-    .container
-      +desktop
-        background: no-repeat bottom right url('/static/base/me-young.png')
-
+    background: $hero-background no-repeat bottom url('/static/base/me-young.png')
+    background-position-x: 85%
 
   .container
     display: flex

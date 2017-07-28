@@ -72,6 +72,9 @@
             </div>
         </article>
         <hero
+            heroClass="bc"
+            ></hero>
+        <hero
                 heroClass="wales"
         >
         </hero>
