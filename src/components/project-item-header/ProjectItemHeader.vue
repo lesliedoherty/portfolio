@@ -1,5 +1,5 @@
 <template>
-    <header class="project_item--header container">
+    <header class="project_item--header">
         <h1 class="global_title">
             {{ name }}
         </h1>

@@ -79,7 +79,6 @@
                 heroClass="default"
         >
         </hero>
-        <grid></grid>
         <project-item></project-item>
     </section>
 </template>

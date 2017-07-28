@@ -59,7 +59,7 @@ export default {
           "name": "Pappa Murphy\'s",
           "client": "Deloitte",
           "class": [
-            'project_item--image_left'
+            'project_item--animation-center'
           ],
           "roll": "Front-end Architect and Lead Developer for global team",
           "link": "https://pappamurphys.com",
@@ -98,6 +98,77 @@ export default {
         },
         {
           "id": 3,
+          "name": "Multiple Projects",
+          "client": "Vector Media Group",
+          "class": [
+            'project_item--no-image',
+            'project_item--display-testimony',
+            'project_item--two-col-all'
+          ],
+          "roll": "Lead Front-end Developer, Mentor, Advisor",
+          "link": "",
+          "description": "Vector Media Group is a New York web agency and Premier Google Partner with a strong focus on digital marketing and SEO. The majority of my time there was spent working on large API-powered Node applications. In addition to development, I also advised on the front-end architecture for a revamp of the award winning EL Education website.",
+
+          "challenges": "Most clients are under NDA. Information is available on request.",
+          "solution": "",
+          "testimonial": [{
+            "name": "Ben Smith: Director of Technology",
+            "quote": "Leslie is an extremely detailed and thoughtful frontend architect that dedicates herself to her craft. She takes the time and care required to fully understand project requirements and use cases. She excels at the \"human\" side of development as well, including leadership, empathy, and understanding user behavior. She deeply cares about her projects, and it shows in the final output.",
+            "link": "https://www.linkedin.com/in/benjaminsmithweb"
+          }
+          ],
+          "media": [],
+          "technology": [
+            "Javascript",
+            "Backbone.js",
+            "Bootstrap",
+            "node",
+            "npm, bower",
+            "Express Server",
+            "Jenkins"
+          ]
+        },
+        {
+          "id": 4,
+          "class": [
+            'project_item--image_left',
+            'project_item--image_left--bottom'
+          ],
+          "name": "HP Support",
+          "client": "Deloitte",
+          "roll": "Front-end Architect",
+          "link": "http://support.hp.com",
+          "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
+          "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
+          "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
+          "testimonial": [{
+            "name": "Bill Shchwabel",
+            "quote": "This is really long and need to clean up so adding later",
+            "link": "https://www.linkedin.com/in/billschwebel/"
+          },
+            {
+              "name": "Select one of the other testimonials",
+              "quote": "two people said good things!",
+              "link": ''
+            }
+          ],
+          "media": {
+            "preview":  "/static/projects/hp/hp-preview.png",
+            "more" : [
+              "./path/to/image2",
+              "./path/to/image3"
+            ]},
+          "technology": [
+            "HTML",
+            "CSS",
+            "SASS",
+            "Backbone.js",
+            "Phonegap",
+            "Javascript"
+          ]
+        },
+        {
+          "id": 5,
           "name": "Integris Dashboard",
           "client": "Integris",
           "roll": "Front-end Architect and Advisor",
@@ -136,78 +207,9 @@ export default {
             "Webpack",
             "SASS"
           ]
-        },
-        {
-          "id": 4,
-          "name": "Multiple Projects",
-          "client": "Vector Media Group",
-          "class": [
-            'project_item--no-image',
-            'project_item--display-testimony',
-            'project_item--two-col-all'
-          ],
-          "roll": "Lead Front-end Developer, Mentor, Advisor",
-          "link": "",
-          "description": "Vector Media Group is a New York web agency and Premier Google Partner with a strong focus on digital marketing and SEO. The majority of my time there was spent working on large API-powered Node applications. In addition to development, I also advised on the front-end architecture for a revamp of the award winning EL Education website.",
+        }
 
-          "challenges": "Most clients are under NDA. Information is available on request.",
-          "solution": "",
-          "testimonial": [{
-            "name": "Ben Smith: Director of Technology",
-            "quote": "Leslie is an extremely detailed and thoughtful frontend architect that dedicates herself to her craft. She takes the time and care required to fully understand project requirements and use cases. She excels at the \"human\" side of development as well, including leadership, empathy, and understanding user behavior. She deeply cares about her projects, and it shows in the final output.",
-            "link": "https://www.linkedin.com/in/benjaminsmithweb"
-          }
-          ],
-          "media": [],
-          "technology": [
-            "Javascript",
-            "Backbone.js",
-            "Bootstrap",
-            "node",
-            "npm, bower",
-            "Express Server",
-            "Jenkins"
-          ]
-        },
-        {
-               "id": 5,
-               "class": [
-                 'project_item--image_left',
-                 'project_item--image_left--bottom'
-               ],
-               "name": "HP Support",
-               "client": "Deloitte",
-               "roll": "Front-end Architect",
-               "link": "http://support.hp.com",
-               "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
-               "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
-               "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
-               "testimonial": [{
-                 "name": "Bill Shchwabel",
-                 "quote": "This is really long and need to clean up so adding later",
-                 "link": "https://www.linkedin.com/in/billschwebel/"
-               },
-                 {
-                   "name": "another person",
-                   "quote": "two people said good things!",
-                   "link": ''
-                 }
-               ],
-               "media": {
-                 "preview":  "/static/projects/hp/hp-preview.png",
-                 "more" : [
-                   "./path/to/image2",
-                   "./path/to/image3"
-                 ]},
-               "technology": [
-                 "HTML",
-                 "CSS",
-                 "SASS",
-                 "Backbone.js",
-                 "Phonegap",
-                 "Javascript"
-               ]
-             },
+
       ]
     }
   }
