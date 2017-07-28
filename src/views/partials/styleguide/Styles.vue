@@ -48,9 +48,9 @@
             </div>
         </article>
         <div class="container animation--iPad">
-            <project-ipad
+            <project-tablet
                     image="/static/docs/scrollingEx.png"
-            ></project-ipad>
+            ></project-tablet>
         </div>
         <article class="container">
             <header>
@@ -84,6 +84,8 @@
         >
         </hero>
         <project-item></project-item>
+
+
     </section>
 </template>
 
