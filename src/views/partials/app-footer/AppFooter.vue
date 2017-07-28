@@ -21,6 +21,4 @@
   </footer>
 </template>
 
-<script>
-  export default {}
-</script>
+<script src="./index.js"></script>

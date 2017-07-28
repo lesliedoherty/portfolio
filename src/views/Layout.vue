@@ -10,8 +10,8 @@
 </template>
 
 <script>
-  import AppFooter from './partials/AppFooter.vue'
-  import AppNav from './partials/AppNav.vue'
+  import AppFooter from './partials/app-footer/AppFooter.vue'
+  import AppNav from './partials/app-nav/AppNav.vue'
 
   export default {
     name: 'app',

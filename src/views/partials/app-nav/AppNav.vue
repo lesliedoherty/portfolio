@@ -23,14 +23,5 @@
   </div>
 </template>
 
-<script>
-  import Hero from './../../components/hero/Hero'
-
-  export default {
-    name: 'appNav',
-    components: {
-      'hero': Hero
-    }
-  }
-</script>
+<script src="./index.js"></script>
 
