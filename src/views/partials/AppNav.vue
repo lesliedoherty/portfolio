@@ -1,11 +1,10 @@
 <template>
   <nav class="navbar">
     <div class="container">
-      <!-- Being a litte nerdy here but I like that you decided to see the code and find out what a nerd you're dealing with.  -->
-      <dl class="nav_branding">
-        <dt>Leslie Doherty</dt>
-        <dd class="description">Front-end Architect</dd>
-      </dl>
+      <header class="nav_branding content">
+        <h1 class="global_title">Leslie Doherty</h1>
+        <h2 class="global_subtitle">Front-end Architect</h2>
+      </header>
 
       <div class="nav_links">
         <a class="nav_item" href="https://github.com/lesliedoherty" target="_blank">
