@@ -3,7 +3,7 @@
 
     <app-navigation></app-navigation>
     <main role="main" aria-labelledby="Label" class="content">
-       <router-view></router-view>
+      <router-view></router-view>
    </main>
    <app-footer></app-footer>
   </section>

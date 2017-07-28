@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="parent">
         <article class="container">
             <header>
                 <h1>{{ msg }}</h1>
@@ -59,9 +59,14 @@
             </header>
             <div class="component_usage">
                 <p>Based on the class used when embedding the component.</p>
-                <p>Pass in the following when used to see the picture from Wales:
+                <p>Pass in the following when used to see the picture from Wales (used above the router view so on all pages at the top):
                     <code>
                         class="wales"
+                    </code>
+                </p>
+                <p>I used a dark background placeholder for the swing photo for now:
+                    <code>
+                        class="bc"
                     </code>
                 </p>
                 <p>Or for the Old Photo Of Me:
@@ -72,12 +77,8 @@
             </div>
         </article>
         <hero
-            heroClass="bc"
-            ></hero>
-        <hero
-                heroClass="wales"
-        >
-        </hero>
+                heroClass="bc"
+        ></hero>
         <hero
                 heroClass="default"
         >

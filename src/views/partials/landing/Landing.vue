@@ -1,8 +1,5 @@
 <template>
-  <section>
-    <hero
-      class="wales"
-    ></hero>
+  <section class="parent">
     <project-item></project-item>
   </section>
 </template>

@@ -1,4 +1,5 @@
 <template>
+<div class="hero-wrap wales">
   <nav class="navbar">
     <div class="container">
       <header class="nav_branding content">
@@ -16,8 +17,20 @@
       </div>
     </div>
   </nav>
+  <hero
+    class="wales"
+  ></hero>
+  </div>
 </template>
 
 <script>
-  export default {}
+  import Hero from './../../components/hero/Hero'
+
+  export default {
+    name: 'appNav',
+    components: {
+      'hero': Hero
+    }
+  }
 </script>
+

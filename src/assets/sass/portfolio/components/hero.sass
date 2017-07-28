@@ -26,8 +26,11 @@
           color: $hero-link-color
           border-bottom: 1px solid $hero-link-color
   &.wales
-    background: no-repeat top right url('/static/base/wales-header.jpg')
-    background-size: cover
+    // lets move this one up just to test it out
+    // removed this from the bottom of the styleguide and letting it live above the router view
+    // Moved to hero div class above nav.
+    //background: no-repeat top right url('/static/base/wales-header.jpg')
+    //background-size: cover
   &.bc
     background: no-repeat bottom right url('/static/base/owen-blue-hill-header.jpg')
     background-size: cover
@@ -51,3 +54,9 @@
     +fullhd
       p
         width: 55%
+.hero-wrap
+  // the hero-wrap class  is above the navigation to bring up the background as a test
+  &.wales
+    background: no-repeat top right url('/static/base/wales-header.jpg')
+    background-size: cover
+
