@@ -8,7 +8,7 @@
       </header>
 
       <div class="nav_links">
-        <a class="nav_item" href="https://github.com/lesliedoherty" target="_blank">
+        <a class="nav_item" href="/" target="_blank">
           Work
         </a>
         <a class="nav_item" href="https://twitter.com/mrsflinger" target="_blank">
