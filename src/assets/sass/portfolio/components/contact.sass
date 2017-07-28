@@ -1,0 +1,19 @@
+.contact
+  &.contact-wrapper
+  background-color: $blue-background
+  z-index: 3
+  position: relative
+  &_form-wrapper
+    +tablet
+      display: flex
+      img
+        align-self: flex-end
+    img
+      +until($desktop)
+        display: none
+  &_form
+    margin-bottom: $margin_small
+    +tablet
+      flex: 2
+      .field
+        max-width: 75%

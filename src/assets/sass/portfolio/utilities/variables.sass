@@ -3,9 +3,11 @@
 // 2. Colors
 // 3. Typography
 // 4. Layout
-// 5. Navigation Bar
-// 6. Footer
-// 7. I'm too lazy to create too many more sections for a tiny freakin' website so this is MISC
+// 5. Buttons
+// 6. Navigation Bar
+// 7. Footer
+// 8. Hero
+// 9. I'm too lazy to create too many more sections for a tiny freakin' website so this is MISC
 ////////////////////////////////////////////////
 // 1. Initial variables
 @import "./../../bulma/sass/utilities/functions"
@@ -43,12 +45,12 @@ $dark: $grey-darker !default
 $orange-invert: findColorInvert($orange) !default
 $yellow-invert: findColorInvert($yellow) !default
 $green-invert: findColorInvert($green) !default
-$turquoise-invert: findColorInvert($turquoise) !default
+$blue: findColorInvert($blue) !default
 $blue-invert: findColorInvert($blue) !default
 $purple-invert: findColorInvert($purple) !default
 $red-invert: findColorInvert($red) !default
 
-$primary-invert: $turquoise-invert !default
+$primary-invert: $blue !default
 $info-invert: $blue-invert !default
 $success-invert: $green-invert !default
 $warning-invert: $yellow-invert !default
@@ -58,7 +60,8 @@ $dark-invert: $light !default
 
 
 // themed
-
+$blue: #8da5cc
+$blue-background: rgb(232,240,243)
 $blue-invert: #fff
 $pink: #ffb3b3
 $pink-invert: #333333
@@ -68,7 +71,7 @@ $yellow: #ffffba
 // applied
 
 $primary: $blue
-$primary-invert: $grey-darker
+$primary-invert: $white
 $danger: $red
 $action: $blue
 
@@ -165,19 +168,38 @@ $desktop: 1000px !default
 $widescreen: 1192px !default
 $fullhd: 1384px !default
 
+// 5. Buttons
+$button: $grey-darker !default
+$button-background: $white !default
+$button-border: $grey-lighter !default
 
-// 5. Navigation Bar
+$button-hover: $link-hover !default
+$button-hover-border: $link-hover-border !default
+
+$button-focus: $link-focus !default
+$button-focus-border: $link-focus-border !default
+
+$button-active: $link-active !default
+$button-active-border: $link-active-border !default
+
+$button-static: $grey !default
+$button-static-background: $white-ter !default
+$button-static-border: $grey-lighter !default
+
+$button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default
+
+// 6. Navigation Bar
 $navbar-background: transparent
 $navbar-height: $space_base
 $nav-link-color: $white
 $nav-header-color: $white
 
-// 6. Footer
+// 7. Footer
 $footer-background: $background !default
 $footer-height: $space_base
 $footer-link-color: $grey-darker
 
-// 7. Hero
+// 8. Hero
 $hero-spacing: $margin_xs_small
 $hero-link-color: $grey-dark
 $hero-text-color-on-background: $white
@@ -186,7 +208,7 @@ $hero-background: $light
 $hero-color: $grey-dark
 $hero-height: 20em
 
-// 8. Miscellaneous
+// 9. Miscellaneous
 
 $easing: ease-out !default
 $radius-small: 2px !default
