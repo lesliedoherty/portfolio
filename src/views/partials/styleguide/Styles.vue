@@ -37,7 +37,8 @@
                 <h1>iPad Animated Background</h1>
             </header>
             <div class="component_usage">
-                <p>Based on the animation property in the media object. Example Below:</p>
+                <p>Based on the animation property in the media object. I <a href="https://github.com/lesliedoherty/portfolio/commit/853a10b4fcda03f7322ae8d0f145a181dd4a64ac">decided</a> to make use of <code>transform: rotateZ(360deg)</code> to use the GPU power more than the CPU since it was running high at ~40% in Chrome.
+                </p>
                 <p>The conditional is used inside the for project loop.
                     <code>
                         v-if="project.media.animation"
