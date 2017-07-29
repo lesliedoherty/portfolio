@@ -1,0 +1,64 @@
+=input
+  +control
+  background-color: $input-background
+  border-color: $input-border
+  color: $input
+  &:hover,
+  &.is-hovered
+    border-color: $input-hover-border
+  &:focus,
+  &.is-focused,
+  &:active,
+  &.is-active
+    border-color: $input-focus-border
+  &[disabled]
+    background-color: $input-disabled-background
+    border-color: $input-disabled-border
+    box-shadow: none
+    color: $input-disabled
+    +placeholder
+      color: rgba($input, 0.3)
+
+
+// Containers
+.field
+  &:not(:last-child)
+    margin-bottom: $margin_small
+  @each $name, $pair in $colors
+      $color: nth($pair, 1)
+      &.has-#{$name}
+        color: $color
+.control
+  font-size: $size-normal
+  position: relative
+  text-align: left
+  margin-bottom: $margin_xs_small
+
+// Parts
+.label
+  color: $input
+  display: block
+  font-size: $size-large
+  font-weight: $weight-normal
+  &:not(:last-child)
+    margin-bottom: $margin_xsxs_small - 0.25
+
+.help, .form-control-feedback
+  display: block
+  margin-top: $margin-xsxs_small
+
+.input,
+.textarea
+  +input
+  box-shadow: inset 0 2px 2px rgba($black, 0.1)
+  max-width: 100%
+  width: 100%
+  padding: $padding_small / 2
+
+.textarea
+  display: block
+  max-height: 600px
+  max-width: 100%
+  min-height: 120px
+  min-width: 100%
+  resize: vertical

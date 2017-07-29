@@ -3,7 +3,7 @@ import Grid from '@/components/grid/Grid'
 import Hero from '@/components/hero/Hero'
 import ProjectTablet from '@/components/project-tablet/ProjectTablet'
 import ProjectMacbook from '@/components/project-macbook/ProjectMacbook'
-//import Contact from '@/components/contact/Contact'
+import Contact from '@/components/contact/Contact'
 export default {
   name: 'styles',
   components: {
@@ -11,8 +11,8 @@ export default {
     "grid": Grid,
     "hero": Hero,
     "project-tablet": ProjectTablet,
-    "project-macbook": ProjectMacbook
-    //"contact": Contact
+    "project-macbook": ProjectMacbook,
+    "contact": Contact
   },
   data () {
     return {

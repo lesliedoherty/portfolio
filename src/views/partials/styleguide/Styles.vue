@@ -25,8 +25,16 @@
         </article>
         <article class="container">
             <header>
-                <h1>Example Usages of Components</h1>
-                <h2>iPad Animated Background</h2>
+                <h1>Contact Component</h1>
+                <p>Section layout will depend on parent. <code>class="contact"</code> will set the width and layout on the landing page. Without the contact container, form responds as seen:</p>
+            </header>
+            <div class="container">
+                <contact></contact>
+            </div>
+        </article>
+        <article class="container">
+            <header>
+                <h1>iPad Animated Background</h1>
             </header>
             <div class="component_usage">
                 <p>Based on the animation property in the media object. Example Below:</p>
