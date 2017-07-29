@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       formstate: {},
-      finished: true,
+      finished: false,
       model: {
         name: '',
         _replyto: '',
