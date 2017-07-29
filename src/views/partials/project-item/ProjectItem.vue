@@ -37,10 +37,10 @@
 
                 <aside>
                     <dl>
-                        <project-item-description-list-item v-if="project.roll"
-                                                            label="Roll"
+                        <project-item-description-list-item v-if="project.role"
+                                                            label="Role"
                                                             :id="project.id"
-                                                            :content="project.roll"
+                                                            :content="project.role"
                         >
                         </project-item-description-list-item>
                         <div>

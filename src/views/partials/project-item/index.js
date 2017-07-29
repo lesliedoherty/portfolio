@@ -23,10 +23,10 @@ export default {
           ],
           "name": "MyLincoln App",
           "client": "INRIX",
-          "roll": "Lead Front-end UI Developer",
+          "role": "Lead Front-end UI Developer",
           "link": "",
-          "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
-          "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
+          "description": "Specified, implemented, and enforced development guidelines, to ensure consistency within the codebase, and the final UI. Worked with the design team to translate design visuals in to UI templates, for use with Backbone.js.",
+          "challenges": "Ensuring that an HTML5 application feels like a native app on both Android and iOS. Maintaining responsiveness whilst retrieving live traffic data from external APIs, over mobile networks of varying quality.",
           "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
           "testimonial": [{
             "name": "Bill Shchwabel",
@@ -61,17 +61,12 @@ export default {
           "class": [
             'project_item--animation-center'
           ],
-          "roll": "Front-end Architect and Lead Developer for global team",
+          "role": "Front-end Architect and Lead Developer for global team",
           "link": "https://pappamurphys.com",
-          "description": "Papa Murphy's pizza company worked with Deloitte to overhaul its website. My team was responsible for the UI and delivering built templates to the India-based back-end team for integration.",
-          "challenges": "More Words Here",
-          "solution": "Great Words Here",
-          "testimonial": [{
-            "name": "11th Doctor",
-            "quote": "I never know why. I only know who. Bow ties are cool. Usually called 'The Doctor.' Or 'The Caretaker.' Or 'Get off this planet.' Though, strictly speaking, that probably isn't a name.",
-            "link": "http://doctoripsum.com/"
-          }
-          ],
+          "description": "Managed a multi-discipline team of designers and developers, responsible for delivering a full UI redesign of the Pappa Murphy's website, and associated front-end templates. Worked closely with my counterpart in India, to integrate the front-end templates with a content management system.",
+          "challenges": "Remote team was unfamiliar with some of the build process on the Front-End.",
+          "solution": "We enabled the India team to move forward using templates and example guides from the US-based studio team.",
+          "testimonial": [],
           "media": {
             "preview":  "",
             "animation":
@@ -93,7 +88,8 @@ export default {
             "Angular",
             "Gulp",
             "node",
-            "npm, bower"
+            "npm",
+            "bower"
           ]
         },
         {
@@ -105,7 +101,7 @@ export default {
             'project_item--display-testimony',
             'project_item--two-col-all'
           ],
-          "roll": "Lead Front-end Developer, Mentor, Advisor",
+          "role": "Lead Front-end Developer, Mentor, Advisor",
           "link": "",
           "description": "Vector Media Group is a New York web agency and Premier Google Partner with a strong focus on digital marketing and SEO. The majority of my time there was spent working on large API-powered Node applications. In addition to development, I also advised on the front-end architecture for a revamp of the award winning EL Education website.",
 
@@ -136,21 +132,16 @@ export default {
           ],
           "name": "HP Support",
           "client": "Deloitte",
-          "roll": "Front-end Architect",
+          "role": "Front-end Architect",
           "link": "http://support.hp.com",
           "description": "Specified CSS and UI guidelines for team. Created UI templates from design team to integrate with backbone.js.",
           "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
           "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
           "testimonial": [{
-            "name": "Bill Shchwabel",
-            "quote": "This is really long and need to clean up so adding later",
-            "link": "https://www.linkedin.com/in/billschwebel/"
-          },
-            {
-              "name": "Select one of the other testimonials",
-              "quote": "two people said good things!",
-              "link": ''
-            }
+            "name": "Andi Russu, Creative Director",
+            "quote": "Leslie has been invaluable in putting in place and delivering a well architected and coded solution for the client. She has provided team management input numerous times and has overall benefited the team and the client in the process. Her emphasis on well formatted and structured code was essential on this project and has been of great value when integrating with our USI counterparts.",
+            "link": "https://www.linkedin.com/in/andirusu/"
+          }
           ],
           "media": {
             "preview":  "/static/projects/hp/hp-preview.png",
@@ -171,7 +162,7 @@ export default {
           "id": 5,
           "name": "Integris Dashboard",
           "client": "Integris",
-          "roll": "Front-end Architect and Advisor",
+          "role": "Front-end Architect and Advisor",
           "link": "https://integris.io",
           "description": " Integris required a front-end architect to develop a component-based styleguide based on design mockups, as well as structuring the right front-end framework to work with their API.",
           "challenges": "The API was in flux and the developers were busy handling service side and were not as familiar with Front-End UI elements. A previous version had been put together in Angular but staff admitted knowledge of Angular was not their strong suit.",
