@@ -13,6 +13,7 @@ export default {
     "project-tablet": ProjectTablet,
     "project-macbook": ProjectMacbook
   },
+  props: ['parentClass'],
   data () {
     return {
       projects: [

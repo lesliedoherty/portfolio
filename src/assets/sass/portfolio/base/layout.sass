@@ -1,11 +1,22 @@
 .container
-  padding: $padding_base
+  position: relative
+  padding: $padding_small
+  & > .container
+    padding: $padding_small 0
   +tablet
-    margin: auto 10%
-  .container
-    padding-left: 0
-    padding-right: 0
-    margin: 0
+    padding: $padding_base
+    & > .container
+      padding: $padding_base 0
+  +desktop
+    margin: 0 auto
+    max-width: $desktop - 40px
+    width: $desktop - 40px
+  +widescreen
+    max-width: $desktop - 40px
+    width: $widescreen - 40px
+  +fullhd
+    max-width: $fullhd - 40px
+    width: $fullhd - 40px
 
 main.content:not(:last-child)
   margin-bottom: 0
@@ -32,8 +43,3 @@ main.content:not(:last-child)
   background-position: center center
   +tablet
     max-width: 75%
-
-.container.animation--macbook
-  //position: absolute
-  //left: $padding_base
-  //top: $padding_base

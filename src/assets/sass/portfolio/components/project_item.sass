@@ -1,7 +1,7 @@
 .project_item
   border-bottom: 1px solid $grey-lighter
   position: relative
-  z-index: 1
+  z-index: 10
   transition: all 500ms ease
   &:nth-child(even)
     background-color: $background
@@ -19,61 +19,67 @@
       content: ","
     +tablet
       display: inline
-  & > .container
-    +tablet
-      margin: auto 10%
-  &--two-col-all
-    +tablet
-      justify-content: center
-      display: flex
-      .container
-         min-width: 40%
-         width: 40%
-         margin-right: 5%
-      .project_item--testimonial-wrapper
-        min-width: 40%
-  &--two-col-content
-      +tablet
-        .project_item--content
-              column-count: 2
-              column-gap: $padding_base
-  &--image_left, &--image_right
-    +tablet
-      display: flex
-      .container
-        min-width: 55%
-        width: 55%
 
-  &--image_left
+  &--two-col-content, &--animation-center
     +tablet
-      flex-direction: row-reverse
-    &--bottom
+      .project_item--content
+        column-count: 2
+        column-gap: $padding_base
+
+  &--image_right, &--image_left
       +tablet
         .container
-          margin-left: auto
+          +clearfix
+          .project_item--body
+            width: 65%
+            z-index: 15
         .project_item--preview
-          align-self: flex-end
-          max-width: $space_base * 10
+          position: absolute
+          z-index: 12
+          width: 33%
 
   &--image_right
-    +until($tablet)
+    .project_item--preview
+      text-align: right
+      +tablet
+        bottom: 0
+        right: 0
+  &--image_left
+    .project_item--body
+      +tablet
+        margin-left: 35%
+    .project_item--preview
+      text-align: left
+
+    &:not(.project_item--image_left--bottom)
+      +tablet
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+
+    &--bottom
       .project_item--preview
-        text-align: right
-    +tablet
-      .container
-        margin-right: auto
-      .project_item--preview
-        justify-content: flex-end
-        max-width: $space_base * 10
+        +tablet
+          left: 0
+          bottom: 0
+
+  &--two-col-all
+    .container
+      +tablet
+        column-count: 2
+        column-gap: $padding_base
+        aside
+          break-inside: avoid
+          -webkit-column-break-inside: avoid
+          column-break-inside: avoid
+          page-break-inside: avoid
+          break-after: always
+        blockquote
+          margin-top: $margin_base
 
   &--preview
     margin-bottom: -($margin_xs_small / 2)
-    z-index: 0
     +tablet
-      display: flex
-      margin-bottom: 0
-      .project_item--preview-item
-        align-self: flex-end
 
   &--testimonial-wrapper
     // by default we will hide the testimonies unless passing in a class that displays them so there's flexibility on where and when to display these
@@ -84,13 +90,7 @@
     .project_item--testimonial-wrapper
       visibility: visible
       display: block
-      +tablet
-        display: flex
-        flex-direction: column
-        justify-content: center
-        margin: auto 10% auto auto
 
   &--content
     div
       margin-bottom: $margin_small
-

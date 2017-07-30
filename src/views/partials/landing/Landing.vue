@@ -3,7 +3,9 @@
     <header class="container">
       <h1 class="global_subtitle">Recent Work</h1>
     </header>
-    <project-item></project-item>
+    <project-item
+      parentClass="use-flex"
+    ></project-item>
     <section class="contact contact-wrapper">
 
       <header class="container">

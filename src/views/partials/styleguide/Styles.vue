@@ -23,6 +23,7 @@
                 <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
             </div>
         </article>
+        <div class="break"><h1>Contact</h1></div>
         <article class="container">
             <header>
                 <h1>Contact Component</h1>
@@ -32,6 +33,8 @@
                 <contact></contact>
             </div>
         </article>
+        <div class="break"><h1>Animations</h1></div>
+
         <article class="container">
             <header>
                 <h1>iPad Animated Background</h1>
@@ -61,10 +64,12 @@
                     image="/static/docs/scrollingEx.png"
             ></project-tablet>
         </div>
+        <div class="break"><h1>Hero Component* Needs review</h1></div>
+
         <article class="container">
             <header>
                 <h1>Hero Component</h1>
-                <p>Can't decide between these two backgrounds so here are options</p>
+                <p>Originally had two backgrounds I couldn't decide between: </p>
             </header>
             <div class="component_usage">
                 <p>Based on the class used when embedding the component.</p>
@@ -92,7 +97,10 @@
                 heroClass="default"
         >
         </hero>
-        <project-item></project-item>
+        <div class="break"><h1>Project Item Loop</h1></div>
+        <project-item
+                parentClass="use-block"
+        ></project-item>
 
 
     </section>
