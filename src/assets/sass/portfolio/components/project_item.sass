@@ -52,10 +52,11 @@
       text-align: left
 
     &:not(.project_item--image_left--bottom)
-      +tablet
-        left: 0
-        top: 50%
-        transform: translateY(-50%)
+      .project_item--preview
+        +tablet
+         left: 0
+         top: 50%
+         transform: translateY(-50%)
 
     &--bottom
       .project_item--preview
@@ -75,7 +76,9 @@
           page-break-inside: avoid
           break-after: always
         blockquote
-          margin-top: $margin_base
+          margin-top: $margin_small
+
+
 
   &--preview
     margin-bottom: -($margin_xs_small / 2)

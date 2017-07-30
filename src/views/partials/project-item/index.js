@@ -33,13 +33,7 @@ export default {
             "name": "Bill Shchwabel",
             "quote": "This is really long and need to clean up so adding later",
             "link": "https://www.linkedin.com/in/billschwebel/"
-          },
-            {
-              "name": "another person",
-              "quote": "two people said good things!",
-              "link": ''
-            }
-          ],
+          }],
           "media": {
             "preview":  "/static/projects/lincoln/lincoln-preview.png",
             "more" : [
@@ -88,9 +82,9 @@ export default {
             "Bootstrap",
             "Angular",
             "Gulp",
-            "node",
-            "npm",
-            "bower"
+            "Node",
+            "Npm",
+            "Bower"
           ]
         },
         {
@@ -119,8 +113,9 @@ export default {
             "Javascript",
             "Backbone.js",
             "Bootstrap",
-            "node",
-            "npm, bower",
+            "Node",
+            "Npm,",
+            "Bower",
             "Express Server",
             "Jenkins"
           ]
@@ -194,14 +189,50 @@ export default {
             "Javascript",
             "Vue.js",
             "Foundation",
-            "node",
-            "npm",
+            "Node",
+            "Npm",
             "Webpack",
             "SASS"
           ]
+        },
+        {
+          "id": 6,
+          "class": [
+            'project_item--image_left',
+            'project_item--display-testimony'
+          ],
+          "name": "Wells Fargo",
+          "client": "Deloitte",
+          "role": "Front-end Architect",
+          "link": "",
+          "description": "Created front-end workflow and styleguide out of JSON objects and Jade on a node server. Worked closely with Wells Fargo implementation team.",
+          "challenges": " Strict Accessibility Guidelines guided UI. Strong communication necessary with Wells Fargo technical team for smooth implementation.",
+          "solution": "Created templates out of components for reference as well templates conforming to the ADA requirements.",
+          "testimonial": [{
+            "name": "Adayna Gonzalez, Vice President, Digital Product Development at Wells Fargo Advisors",
+            "quote": "You’ve got a great one in Leslie. She is on top of her game which is awesome!",
+            "link": "https://www.linkedin.com/in/adayna/"
+          }
+          ],
+          "media": {
+            "preview":  "/static/projects/wells/wells-preview.png",
+            "more" : [
+              "./path/to/image2",
+              "./path/to/image3"
+            ]},
+          "technology": [
+            "HTML",
+            "CSS",
+            "SASS",
+            "Jade",
+            "Webpack",
+            "Bower",
+            "Npm",
+            "Node",
+            "Bourbon\/Neat",
+            "Javascript"
+          ]
         }
-
-
       ]
     }
   }
