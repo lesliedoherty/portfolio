@@ -14,8 +14,12 @@
       </div>
       <div class="footer_misc">
         <h4> &copy;2017</h4>
-        <p>Please don't steal things; even code. Please do learn and ask how I can mentor you or work for you.</p>
-        <p>Please do tell me how I can improve my code. With kindness.</p>
+        <ul>
+          <li>Please don't use any of this content without permission, not even code.</li>
+          <li>Please do learn and ask how I can mentor you or work for you.</li>
+          <li>Please do kindly tell me how I can improve my code.</li>
+          <li>As always, this is a work in progress, just like I am.</li>
+        </ul>
       </div>
     </section>
   </footer>

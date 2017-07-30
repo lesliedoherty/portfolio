@@ -8,10 +8,10 @@
       </header>
 
       <div class="nav_links">
-        <a class="nav_item" href="/" target="_blank">
+        <a class="nav_item" href="/">
           Work
         </a>
-        <a class="nav_item" href="https://twitter.com/mrsflinger" target="_blank">
+        <a class="nav_item" href="#contact">
           Contact
         </a>
       </div>

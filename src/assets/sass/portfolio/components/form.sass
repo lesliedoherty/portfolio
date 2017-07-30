@@ -29,7 +29,6 @@
       &.has-#{$name}
         color: $color
 .control
-  font-size: $size-normal
   position: relative
   text-align: left
   margin-bottom: $margin_xs_small
@@ -62,3 +61,24 @@
   min-height: 120px
   min-width: 100%
   resize: vertical
+
+.checkbox,
+.radio
+  cursor: pointer
+  display: inline-block
+  line-height: 1.25
+  position: relative
+  input
+    cursor: pointer
+  &:hover
+    color: $input-hover
+  &[disabled]
+    color: $input-disabled
+    cursor: not-allowed
+
+.radio
+  & + .radio
+    margin-left: 0.5em
+
+input[type="radio"]
+  margin-left: $margin_xs_small

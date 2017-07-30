@@ -2,6 +2,31 @@
     <section class="parent">
         <article class="container">
             <header>
+                <h1>Testing Hero Backgrounds</h1>
+                <h2>IN PROGRESS</h2>
+            </header>
+
+            <p>Pick a class to change the hero background.<br />
+                <small>Coming Soon: Write up of vue and styleguides to help clients and designers visualize in the browser like this.</small></p>
+
+            <div class="control">
+                <label class="radio" for="one">From June 2017 in <a href="https://goo.gl/maps/U85xFTNvxgn">Langland Bay</a>
+                    <input type="radio" id="one" value="wales" v-model="heroWrapperClass">
+                </label>
+            </div>
+
+            <div class="control">
+                <label class="radio" for="two">My son as a toddler on a hill
+                    <input type="radio" id="two" value="bc" v-model="heroWrapperClass">
+                </label>
+            </div>
+
+
+            <h3>You're viewing: {{ heroWrapperClass }}</h3>
+
+        </article>
+        <article class="container">
+            <header>
                 <h1>{{ msg }}</h1>
                 <p>A little insight in to "How I Work". These are components rendered on the same page for easy reference.
                     Bonus! Quick UI check at breakpoints for the entire site in one place.</p>

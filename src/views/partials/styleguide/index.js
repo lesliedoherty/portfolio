@@ -16,7 +16,8 @@ export default {
   },
   data () {
     return {
-      msg: 'Styles and Components'
+      msg: 'Styles and Components',
+      heroWrapperClass: ''
     }
   }
 }
