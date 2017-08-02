@@ -1,6 +1,7 @@
 import VueRouter from 'vue-router'
 import Landing from '@/views/partials/landing/Landing'
 import Styles from '@/views/partials/styleguide/Styles'
+import Sandbox from '@/views/partials/sandbox/Sandbox'
 
 let router = new VueRouter({
   routes: [
@@ -13,6 +14,11 @@ let router = new VueRouter({
       path: '/styleguide',
       name: 'Styles',
       component: Styles
+    },
+    {
+      path: '/sandbox',
+      name: 'Sandbox',
+      component: Sandbox
     }
   ]
 })

@@ -18,6 +18,12 @@
     components: {
       'app-footer': AppFooter,
       'app-navigation': AppNav
+    },
+    data: {
+      heroClass: ''
+    },
+    methods: {
+
     }
   }
 </script>
