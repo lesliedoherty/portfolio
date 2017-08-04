@@ -4,6 +4,7 @@ import Hero from '@/components/hero/Hero'
 import ProjectTablet from '@/components/project-tablet/ProjectTablet'
 import ProjectMacbook from '@/components/project-macbook/ProjectMacbook'
 import Contact from '@/components/contact/Contact'
+import SelectSource from '@/components/select-source/SelectSource'
 export default {
   name: 'styles',
   components: {
@@ -12,12 +13,32 @@ export default {
     "hero": Hero,
     "project-tablet": ProjectTablet,
     "project-macbook": ProjectMacbook,
-    "contact": Contact
+    "contact": Contact,
+    "select-source": SelectSource
   },
   data () {
     return {
       msg: 'Styles and Components',
-      heroWrapperClass: ''
+      heroWrapperClass: '',
+      sources: this.$root.$data.sources,
+      source: '',
+      items: []
     }
+  },
+
+  methods: {
+    sourceChanged: function (source, items) {
+      this.source = source
+      this.items = items
+    }
+  },
+  created: function () {
+    this.source = this.sources[0].path
+    console.log('created in select-- this.source ' + this.source);
+    this.$http.get(this.source)
+      .then(response => {
+        this.items = response.data.items;
+        console.log('created in select items are  ' + response.data.items);
+      });
   }
 }

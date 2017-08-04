@@ -8,7 +8,7 @@
 
             <p>Pick a class to change the hero background.<br />
                 <small>Coming Soon: Write up of vue and styleguides to help clients and designers visualize in the browser like this.</small></p>
-
+            <p>For other cool stuff that you can do with a styleguide, check out the <a href="#layouts" v-smooth-scroll="{ duration: 3500}">Layout Options</a></p>
             <div class="control">
                 <label class="radio" for="one">From June 2017 in <a href="https://goo.gl/maps/U85xFTNvxgn">Langland Bay</a>
                     <input type="radio" id="one" value="wales" v-model="heroWrapperClass">
@@ -85,9 +85,9 @@
             </div>
         </article>
         <div class="container animation--iPad">
-            <project-tablet
-                    image="/static/docs/scrollingEx.png"
-            ></project-tablet>
+            <!--<project-tablet-->
+                    <!--image="/static/docs/scrollingEx.png"-->
+            <!--&gt;</project-tablet>-->
         </div>
         <div class="break"><h1>Hero Component* Needs review</h1></div>
 
@@ -122,11 +122,22 @@
                 heroClass="default"
         >
         </hero>
-        <div class="break"><h1>Project Item Loop</h1></div>
-        <project-item
-                parentClass="use-block"
-        ></project-item>
+        <div class="break"><h1>Project Item Layouts</h1></div>
 
+        <article id="layouts" class="container">
+            <header>
+                <h1>Layout Classes</h1>
+            </header>
+            <div class="component_usage">
+                <p>Classes are passed in with the data for each project as part of the JSON Schema for projectItem. The following classes and results are available and demonstrated:</p>
+            </div>
+            <aside>
+                <h2>Select A Source*</h2>
+                <p>Coming up: Fixing the state so props don't mutate and kill each other with their Ood-like mutations.</p>
+                <select-source v-on:sourceChanged="sourceChanged"></select-source>
+            </aside>
+        </article>
+        <project-item v-bind:source="source" :items="items"></project-item>
 
     </section>
 </template>

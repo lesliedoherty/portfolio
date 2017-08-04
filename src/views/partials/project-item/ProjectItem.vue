@@ -1,6 +1,6 @@
 <template>
-    <section :class="parentClass">
-        <article v-for="project in projects"
+    <section>
+        <article v-for="project in items"
                  v-bind:key="project.id"
                  :class="project.class"
                  class="project_item"

@@ -4,6 +4,7 @@ import Styles from '@/views/partials/styleguide/Styles'
 import Sandbox from '@/views/partials/sandbox/Sandbox'
 
 let router = new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',

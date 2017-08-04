@@ -1,0 +1,130 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "class": [
+        "project_item--image_right",
+        "project_item--display-testimony"
+      ],
+      "name": "Right Bottom Image with Testimony",
+      "client": "Client or Employer",
+      "role": "Role",
+      "link": "http://link.com",
+      "description": "project_item--image_right ",
+      "challenges": "The Last Great Time War. My people fought a race called the Daleks, for the sake of all creation. And they lost. We lost. Everyone lost. They're all gone now. My family. My friends.",
+      "solution": "vPeople assume that time is a strict progression of cause-and-effect... but actually, from a non-linear, non-subjective viewpoint, it's more like a big ball of wibbly-wobbly... timey-wimey... stuff.",
+      "testimonial": [{
+        "name": "The 10th Dr",
+        "quote": "Blimey, trying to make an Ood laugh... I'll tell you what, then: don't...step on any butterflies. What have butterflies ever done to you? I'm sorry. I'm so sorry. Allons-y!",
+        "link": "http://doctoripsum.com/"
+      }],
+      "media": {
+        "preview":  "/static/docs/ex-right.png",
+        "more" : [
+          "./path/to/image2",
+          "./path/to/image3"
+        ]},
+      "technology": [
+        "Array",
+        "Of",
+        "Tech",
+        "I often type with a keyboard",
+        "to create",
+        "HTML/JS/CSS/JSON/ETC"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Center Animation",
+      "client": "CSS Animations",
+      "class": [
+        "project_item--animation-center"
+      ],
+      "role": "Brilliant But CPU Intensive",
+      "link": "",
+      "description": "project.media.animation You can pass in a <code>macbook</code> in <code>animation.frame</code> or <code>iPad</code> ",
+      "challenges": "The trouble with computers, of course, is that they're very sophisticated idiots. They do exactly what you tell them at amazing speed. Even if you order them to kill you.",
+      "solution": "So if you do happen to change your mind, it's very difficult to stop them from obeying the original order. But not impossible.",
+      "testimonial": [],
+      "media": {
+        "preview":  "",
+        "animation":
+        {
+          "frame": "iPad",
+          "image": "/static/docs/scrollingEx.png",
+          "mobile": "/static/projects/pm/pm-preview.png"
+        },
+        "more" : [
+          "./path/to/image2",
+          "./path/to/image3"
+        ]},
+
+      "technology": [
+        "Disrupt",
+        "Digital",
+        "Cloud",
+        "Cloud"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Multiple Classes",
+      "client": "Three classes are used here",
+      "class": [
+        "project_item--no-image",
+        "project_item--display-testimony",
+        "project_item--two-col-all"
+      ],
+      "role": "No Image, Display Testimony and Two Col for All",
+      "link": "",
+      "description": "project_item--no-image project_item--display-testimony project_item--two-col-all",
+
+      "challenges": "Create a two column section without an image and a right aligned testimony.",
+      "solution": "",
+      "testimonial": [{
+        "name": "The 11th Doctor",
+        "quote": "Oh, I always rip out the last page of a book. Then it doesn't have to end. I hate endings!",
+        "link": "http://doctoripsum.com/"
+      }
+      ],
+      "media": [],
+      "technology": [
+        "Doctor",
+        "Who",
+        "Best",
+        "David",
+        "Tennant",
+        "Naturally"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Image Left",
+      "client": "",
+      "class": [
+        "project_item--image_left",
+        "project_item--display-testimony"
+      ],
+      "role": "Left Image Center",
+      "link": "",
+      "description": "project_item--image_left",
+
+      "challenges": "Image is on left placed in the center of the div. No testimonial on this example.",
+      "solution": "So if you do happen to change your mind, it's very difficult to stop them from obeying the original order. But not impossible.",
+      "testimonial": [{
+        "name": "The 12th Doctor",
+        "quote": "I'm Scottish. I can complain about things now. I can really complain about things now.",
+        "link": "http://doctoripsum.com/"
+      }
+      ],
+      "media": {
+        "preview": "/static/docs/ex-left.png"
+      },
+      "technology": [
+        "Timey",
+        "Wimey"
+      ]
+    }
+
+  ]
+}

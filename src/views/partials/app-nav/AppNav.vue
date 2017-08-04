@@ -8,10 +8,10 @@
       </header>
 
       <div class="nav_links">
-        <a class="nav_item" href="/">
+        <a class="nav_item" v-smooth-scroll="{ duration: 5000}" href="/#work">
           Work
         </a>
-        <a class="nav_item" href="#contact">
+        <a class="nav_item" v-smooth-scroll="{ duration: 3500}" href="/#contact">
           Contact
         </a>
       </div>

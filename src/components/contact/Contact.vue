@@ -1,6 +1,6 @@
 <template>
   <div class="contact_form--group">
-    <vue-form id="contact" v-if="finished === false" class="contact_form" :state="formstate" @submit.prevent="onSubmit">
+    <vue-form v-if="finished === false" class="contact_form" :state="formstate" @submit.prevent="onSubmit">
 
       <validate auto-label class="field" :class="fieldClassName(formstate.name)">
         <label class="label" label-for="name">Name</label>

@@ -1,12 +1,11 @@
 <template>
   <section class="parent">
-    <header class="container">
+    <header class="container" id="work">
       <h1 class="global_subtitle">Recent Work</h1>
     </header>
-    <project-item
-      parentClass="use-flex"
-    ></project-item>
-    <section class="contact contact-wrapper">
+
+    <project-item v-bind:source="source" :items="items"></project-item>
+    <section id="contact" class="contact contact-wrapper">
 
       <header class="container">
         <h1 class="global_subtitle">Contact</h1>
