@@ -21,12 +21,9 @@ export default {
   },
   methods: {
     updateSource: function (source) {
-      console.log('Update Source In Project-Item ' + source)
-      console.log('Source Path ' + source)
       this.$http.get(source)
         .then(response => {
           this.items = response.data.items;
-          console.log("items are " + this.items)
         });
     }
   },

@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "catapult vue portfolio",
+  "version": "1.1.0",
+  "description": "catapult aka Leslie Doherty's vue portfolio",
   "author": "Leslie Doherty <leslie@catapultwebdevelopment.com>",
   "private": true,
   "scripts": {

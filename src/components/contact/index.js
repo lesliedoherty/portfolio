@@ -34,7 +34,6 @@ export default {
       }
     },
     onSubmit: function () {
-      console.log('onSubmit Function');
       var host = 'https://formspree.io/leslie@catapultwebdevelopment.com';
       if (this.formstate.$invalid) {
         // alert user and exit early
@@ -43,7 +42,6 @@ export default {
       else {
         // otherwise submit form
         var postData = this.model;
-        console.log(postData);
         jQuery.ajax({
           url: host,
           method: "POST",
@@ -51,14 +49,12 @@ export default {
           dataType: "json",
           success: function (data) {
             this.finished = true;
-            console.log('reply success ' + data);
 
           }.bind(this),
           error: function (err) {
             console.log('reply error ' + err)
           },
           complete: function (jqXHR, status) {
-            console.log("Local completion callback.");
           }
         })
       }

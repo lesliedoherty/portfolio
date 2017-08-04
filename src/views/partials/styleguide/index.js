@@ -34,11 +34,9 @@ export default {
   },
   created: function () {
     this.source = this.sources[0].path
-    console.log('created in select-- this.source ' + this.source);
     this.$http.get(this.source)
       .then(response => {
         this.items = response.data.items;
-        console.log('created in select items are  ' + response.data.items);
       });
   }
 }
