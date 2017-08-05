@@ -15,6 +15,7 @@
            "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
            "testimonial": [{
              "name": "Bill Shchwabel",
+             "role": "SVP Marketing and Product",
              "quote": "Leslie came into INRIX on a part time basis (as a contractor) to do the Lincoln work.  Her work has always exceeded expectations given the time and budget allocated.  She has also taken a leadership role, in guiding and challenging the team to come up with better solutions.  She has never missed a delivery and works 24X7 to get the job done.",
              "link": "https://www.linkedin.com/in/billschwebel/"
            }],
@@ -43,7 +44,7 @@
            "role": "Front-end Architect and Lead Developer for global team",
            "link": "https://pappamurphys.com",
            "description": "Managed a multi-discipline team of designers and developers, responsible for delivering a full UI redesign of the Pappa Murphy's website, and associated front-end templates. Worked closely with my counterpart in India, to integrate the front-end templates with a content management system.",
-           "challenges": "Remote team was unfamiliar with some of the technologies used on the Front-End including gulp, jade, npm, and express.",
+           "challenges": "Remote team was unfamiliar with some of the technologies  and tools used on the Front-End.",
            "solution": "We enabled the India team to move forward by creating templates and example guides from the US-based studio team and building static html for integration with clear guidlines.",
            "testimonial": [],
            "media": {
@@ -87,7 +88,8 @@
            "challenges": "Most clients are under NDA. Information is available on request.",
            "solution": "",
            "testimonial": [{
-             "name": "Ben Smith: Director of Technology",
+             "name": "Ben Smith",
+             "role" : " Director of Technology",
              "quote": "Leslie is an extremely detailed and thoughtful frontend architect that dedicates herself to her craft. She takes the time and care required to fully understand project requirements and use cases. She excels at the \"human\" side of development as well, including leadership, empathy, and understanding user behavior. She deeply cares about her projects, and it shows in the final output.",
              "link": "https://www.linkedin.com/in/benjaminsmithweb"
            }
@@ -118,7 +120,8 @@
            "challenges": "Maintaining 'native' feel to html5 app on android and iOS and utilize one set of code for both platforms. Integrate with INRIX API for traffic data and other endpoints.",
            "solution": "Component based templates for backbone.js allow re-use and simplified code making it easier to troubleshoot. Added conditional logic in the build for some device specific overrides to prevent too many collisions in properties. Worked closely with services team.",
            "testimonial": [{
-             "name": "Andi Russu, Creative Director",
+             "name": "Andi Russu",
+             "role": "Creative Director",
              "quote": "Leslie has been invaluable in putting in place and delivering a well architected and coded solution for the client. She has provided team management input numerous times and has overall benefited the team and the client in the process. Her emphasis on well formatted and structured code was essential on this project and has been of great value when integrating with our USI counterparts.",
              "link": "https://www.linkedin.com/in/andirusu/"
            }
@@ -151,12 +154,7 @@
              "project_item--animation_center",
              "project_item--two-col-content"
            ],
-           "testimonial": [{
-             "name": "nice person",
-             "quote": "Nice things they said about the project go here.",
-             "link": "http://doctoripsum.com/"
-           }
-           ],
+           "testimonial": [{}],
            "media": {
              "preview":  "",
              "animation":
@@ -193,7 +191,8 @@
            "challenges": " Strict Accessibility Guidelines guided UI. Strong communication necessary with Wells Fargo technical team for smooth implementation.",
            "solution": "Created templates out of components for reference as well templates conforming to the ADA requirements.",
            "testimonial": [{
-             "name": "Adayna Gonzalez, Vice President, Digital Product Development at Wells Fargo Advisors",
+             "name": "Adayna Gonzalez",
+             "role": "Vice President, Digital Product Development at Wells Fargo Advisors",
              "quote": "You’ve got a great one in Leslie. She is on top of her game which is awesome!",
              "link": "https://www.linkedin.com/in/adayna/"
            }

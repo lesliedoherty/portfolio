@@ -56,6 +56,7 @@
                                 :link="project.testimonial[0].link"
                                 :quote="project.testimonial[0].quote"
                                 :name="project.testimonial[0].name"
+                                :role="project.testimonial[0].role"
                         ></project-testimonial>
                     </template>
                 </div>

@@ -15,6 +15,7 @@
       "solution": "vPeople assume that time is a strict progression of cause-and-effect... but actually, from a non-linear, non-subjective viewpoint, it's more like a big ball of wibbly-wobbly... timey-wimey... stuff.",
       "testimonial": [{
         "name": "The 10th Dr",
+        "role": "Saver of the Universe",
         "quote": "Blimey, trying to make an Ood laugh... I'll tell you what, then: don't...step on any butterflies. What have butterflies ever done to you? I'm sorry. I'm so sorry. Allons-y!",
         "link": "http://doctoripsum.com/"
       }],
@@ -83,6 +84,7 @@
       "solution": "",
       "testimonial": [{
         "name": "The 11th Doctor",
+        "role": "Do you have to ask?",
         "quote": "Oh, I always rip out the last page of a book. Then it doesn't have to end. I hate endings!",
         "link": "http://doctoripsum.com/"
       }
@@ -113,6 +115,7 @@
       "solution": "So if you do happen to change your mind, it's very difficult to stop them from obeying the original order. But not impossible.",
       "testimonial": [{
         "name": "The 12th Doctor",
+        "role": "Scotsman",
         "quote": "I'm Scottish. I can complain about things now. I can really complain about things now.",
         "link": "http://doctoripsum.com/"
       }

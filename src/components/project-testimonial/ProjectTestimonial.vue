@@ -2,7 +2,10 @@
     <div class="project_item--testimonial-wrapper">
         <blockquote :key="id" :cite="link" class="project_item--testimonial">
             {{ quote }}
-            <cite>{{ name }}</cite>
+            <cite>
+                <span class="testimonial_name">{{ name }}</span>
+                <span class="testimonial_role">{{ role }}</span>
+            </cite>
         </blockquote>
     </div>
 </template>
