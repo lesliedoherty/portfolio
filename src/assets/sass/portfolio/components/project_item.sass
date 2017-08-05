@@ -10,16 +10,18 @@
   h2.global_subtitle.project_item--subtitle
     color: $grey
   dt
-    display: inline-block
+    display: block
     font-weight: $weight-bold
+    font-family: $header-font
   dd
-    margin-left: $margin_xsxs_small
+    margin-left: 0
     display: inline-block
     &:not(:last-of-type):after
       content: ","
     +tablet
       display: inline
-
+    & + dd
+      margin-left: 0.3em
   &--two-col-content, &--animation-center
     +tablet
       .project_item--content
