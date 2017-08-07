@@ -5,6 +5,7 @@ import ProjectTablet from '@/components/project-tablet/ProjectTablet'
 import ProjectMacbook from '@/components/project-macbook/ProjectMacbook'
 import Contact from '@/components/contact/Contact'
 import SelectSource from '@/components/select-source/SelectSource'
+import Colors from '@/components/colors/Colors'
 export default {
   name: 'styles',
   components: {
@@ -14,7 +15,8 @@ export default {
     "project-tablet": ProjectTablet,
     "project-macbook": ProjectMacbook,
     "contact": Contact,
-    "select-source": SelectSource
+    "select-source": SelectSource,
+    "colors": Colors
   },
   data () {
     return {

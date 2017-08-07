@@ -48,7 +48,17 @@
                 <p>Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
             </div>
         </article>
-        <div class="break"><h1>Contact</h1></div>
+        <div class="styleguide__break"><h1>Colors</h1></div>
+        <article class="container">
+            <header>
+                <h1>Color Variables</h1>
+                <p>Note the background color and invert color used for text.</p>
+            </header>
+
+            <colors></colors>
+        </article>
+
+        <div class="styleguide__break"><h1>Contact</h1></div>
         <article class="container">
             <header>
                 <h1>Contact Component</h1>
@@ -58,11 +68,12 @@
                 <contact></contact>
             </div>
         </article>
-        <div class="break"><h1>Animations</h1></div>
+        <div class="styleguide__break"><h1>Animations</h1></div>
 
         <article class="container">
             <header>
-                <h1>iPad Animated Background</h1>
+                <h1>iPad Animated Background**</h1>
+                <p>Revisiting this: CSS Keyframe is a crab.</p>
             </header>
             <div class="component_usage">
                 <p>Based on the animation property in the media object. I <a href="https://github.com/lesliedoherty/portfolio/commit/853a10b4fcda03f7322ae8d0f145a181dd4a64ac">decided</a> to make use of <code>transform: rotateZ(360deg)</code> to use the GPU power more than the CPU since it was running high at ~40% in Chrome.
@@ -89,7 +100,7 @@
                     <!--image="/static/docs/scrollingEx.png"-->
             <!--&gt;</project-tablet>-->
         </div>
-        <div class="break"><h1>Hero Component* Needs review</h1></div>
+        <div class="styleguide__break"><h1>Hero Component* Needs review</h1></div>
 
         <article class="container">
             <header>
@@ -122,7 +133,7 @@
                 heroClass="default"
         >
         </hero>
-        <div class="break"><h1>Project Item Layouts</h1></div>
+        <div class="styleguide__break"><h1>Project Item Layouts</h1></div>
 
         <article id="layouts" class="container">
             <header>

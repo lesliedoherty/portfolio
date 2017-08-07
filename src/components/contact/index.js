@@ -41,6 +41,7 @@ export default {
       }
       else {
         // otherwise submit form
+        // I can change this to use vue resource now and probably use the same vue instance. TODO next after State and Styleguide
         var postData = this.model;
         jQuery.ajax({
           url: host,

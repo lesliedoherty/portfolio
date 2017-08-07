@@ -5,16 +5,21 @@ nav
   z-index: 10
   & > .container
     padding: $padding_small - 1 $padding_base
-    text-align: center
     +tablet
       display: flex
       justify-content: space-between
       align-items: center
     .content
       margin-bottom: 0
-      .global_title, .global_subtitle
+      text-align: left
+      .global_title
         color: $nav-header-color
         font-weight: $title-weight-bold
+        padding: 0.75em 0 0.1667em
+      .global_subtitle
+        color: $nav-header-color_subtitle
+        font-size: $size-5
+        line-height: 1.333
     .nav_links .nav_item
       color: $nav-link-color
       font-weight: $weight-bold

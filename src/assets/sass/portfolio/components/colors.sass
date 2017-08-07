@@ -1,0 +1,12 @@
+@import "./../utilities/variables"
+@import "./../../bulma/sass/utilities/mixins"
+
+.colors
+  padding: $padding_small
+  @each $name, $pair in $colors
+     $background: nth($pair, 1)
+     $color: nth($pair, 2)
+     &.is-#{$name}
+      background: $background
+      h2, p
+       color: $color
