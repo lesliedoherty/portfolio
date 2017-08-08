@@ -3,6 +3,9 @@
   position: relative
   z-index: 10
   transition: all 500ms ease
+  & > .container
+    padding-left: $padding_small
+    padding-right: $padding_small
   &:nth-child(even)
     background-color: $background
   &--header
@@ -27,6 +30,13 @@
       .project_item--content
         column-count: 2
         column-gap: $padding_base
+
+      aside
+        break-inside: avoid
+        -webkit-column-break-inside: avoid
+        column-break-inside: avoid
+        page-break-inside: avoid
+        break-after: always
 
   &--image_right, &--image_left
       +tablet
@@ -71,15 +81,12 @@
       +tablet
         column-count: 2
         column-gap: $padding_base
-        aside
-          break-inside: avoid
-          -webkit-column-break-inside: avoid
-          column-break-inside: avoid
-          page-break-inside: avoid
-          break-after: always
         blockquote
           margin-top: $margin_small
-
+  &--description
+    break-inside: avoid
+    -webkit-column-break-inside: avoid
+    column-break-inside: avoid
 
 
   &--preview

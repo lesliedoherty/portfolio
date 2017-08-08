@@ -146,13 +146,17 @@
     +block
     font-family: $header-font
     word-break: break-word
+    line-height: $header-line-height
   .global_title
     color: inherit
     font-size: $title-size
     font-weight: $title-weight-bold
-    line-height: 1.125
+    &--section-main
+      margin-bottom: 0
+      padding-bottom: 0
+      padding-left: $padding-small
+
   .global_subtitle
     color: inherit
     font-size: $subtitle-size
     font-weight: $subtitle-weight
-    line-height: 1.25
