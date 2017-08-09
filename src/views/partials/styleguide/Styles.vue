@@ -9,17 +9,6 @@
             <p>Pick a class to change the hero background.<br />
                 <small>Coming Soon: Write up of vue and styleguides to help clients and designers visualize in the browser like this.</small></p>
             <p>For other cool stuff that you can do with a styleguide, check out the <a href="#layouts" v-smooth-scroll="{ duration: 3500}">Layout Options</a></p>
-            <div class="control">
-                <label class="radio" for="one">From June 2017 in <a href="https://goo.gl/maps/U85xFTNvxgn">Langland Bay</a>
-                    <input type="radio" id="one" value="wales" v-model="heroWrapperClass">
-                </label>
-            </div>
-
-            <div class="control">
-                <label class="radio" for="two">My son as a toddler on a hill
-                    <input type="radio" id="two" value="bc" v-model="heroWrapperClass">
-                </label>
-            </div>
 
 
             <h3>You're viewing: {{ heroWrapperClass }}</h3>
