@@ -1,9 +1,9 @@
-import ProjectItem from '@/views/partials/project-item/ProjectItem'
+import ProjectItems from '@/views/partials/project-item/ProjectItems'
 import Contact from '@/components/contact/Contact'
 export default {
   name: 'landing',
   components: {
-    "project-item": ProjectItem,
+    "project-items": ProjectItems,
     "contact": Contact
   },
   data () {
