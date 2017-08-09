@@ -143,8 +143,7 @@
                 <p>Classes are passed in with the data for each project as part of the JSON Schema for projectItem. The following classes and results are available and demonstrated:</p>
             </div>
             <aside>
-                <h2>Select A Source*</h2>
-                <p>Coming up: Fixing the state so props don't mutate and kill each other with their Ood-like mutations.</p>
+                <h2>Select A Source</h2>
                 <select-source
                         v-bind:activeSource="activeSource"
                         v-bind:sources="sources"
