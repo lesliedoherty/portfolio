@@ -4,7 +4,7 @@
       <h1 class="global_subtitle">Recent Work</h1>
     </header>
 
-    <project-item v-bind:source="source" :items="items"></project-item>
+    <project-item v-bind:projectse="projects"></project-item>
     <section id="contact" class="contact contact-wrapper">
 
       <header class="container global_title--section-main">

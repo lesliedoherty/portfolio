@@ -8,16 +8,7 @@ export default {
   },
   data () {
     return {
-      sources: this.$root.$data.sources,
-      source: '',
-      items: []
+      projects: this.$root.getItems()
     }
-  },
-created: function () {
-  this.source = this.sources[1].path
-  this.$http.get(this.source)
-    .then(response => {
-      this.items = response.data.items;
-    });
   }
 }
