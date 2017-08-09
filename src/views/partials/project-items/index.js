@@ -1,4 +1,4 @@
-import ProjectItem from '@/components/project-item-header/ProjectItem'
+import ProjectItem from '@/views/partials/project-item/ProjectItem'
 
 export default {
   name: 'project-items',

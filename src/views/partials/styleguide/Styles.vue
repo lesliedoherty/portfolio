@@ -145,10 +145,14 @@
             <aside>
                 <h2>Select A Source*</h2>
                 <p>Coming up: Fixing the state so props don't mutate and kill each other with their Ood-like mutations.</p>
-                <select-source v-on:sourceChanged="sourceChanged"></select-source>
+                <select-source
+                        v-bind:activeSource="activeSource"
+                        v-bind:sources="sources"
+                        v-on:source-changed="onSourceChanged"
+                ></select-source>
             </aside>
         </article>
-        <project-item v-bind:source="source" :items="items"></project-item>
+        <project-items v-bind:projects="projects"></project-items>
 
     </section>
 </template>

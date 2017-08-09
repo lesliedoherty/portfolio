@@ -1,4 +1,4 @@
-import ProjectItem from '@/views/partials/project-item/ProjectItem'
+import ProjectItems from '@/views/partials/project-items/ProjectItems'
 import Grid from '@/components/grid/Grid'
 import Hero from '@/components/hero/Hero'
 import ProjectTablet from '@/components/project-tablet/ProjectTablet'
@@ -9,7 +9,7 @@ import Colors from '@/components/colors/Colors'
 export default {
   name: 'styles',
   components: {
-    "project-item": ProjectItem,
+    "project-items": ProjectItems,
     "grid": Grid,
     "hero": Hero,
     "project-tablet": ProjectTablet,
@@ -20,25 +20,17 @@ export default {
   },
   data () {
     return {
+      activeSource: this.$root.getActiveDataSource(),
       msg: 'Styles and Components',
       heroWrapperClass: '',
-      sources: this.$root.$data.sources,
-      source: '',
-      items: []
+      projects: this.$root.getItems(),
+      sources: this.$root.getAvailableDataSources()
     }
   },
 
   methods: {
-    sourceChanged: function (source, items) {
-      this.source = source
-      this.items = items
+    onSourceChanged: function (key) {
+      this.$root.setActiveDataSource(key)
     }
-  },
-  created: function () {
-    this.source = this.sources[0].path
-    this.$http.get(this.source)
-      .then(response => {
-        this.items = response.data.items;
-      });
   }
 }
