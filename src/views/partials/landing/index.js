@@ -1,23 +1,14 @@
-import ProjectItem from '@/views/partials/project-item/ProjectItem'
+import ProjectItems from '@/views/partials/project-items/ProjectItems'
 import Contact from '@/components/contact/Contact'
 export default {
   name: 'landing',
   components: {
-    "project-item": ProjectItem,
+    "project-items": ProjectItems,
     "contact": Contact
   },
   data () {
     return {
-      sources: this.$root.$data.sources,
-      source: '',
-      items: []
+      projects: this.$root.getItems()
     }
-  },
-created: function () {
-  this.source = this.sources[1].path
-  this.$http.get(this.source)
-    .then(response => {
-      this.items = response.data.items;
-    });
   }
 }

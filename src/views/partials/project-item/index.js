@@ -13,26 +13,5 @@ export default {
     "project-tablet": ProjectTablet,
     "project-macbook": ProjectMacbook
   },
-  props: ['source', 'items'],
-  data () {
-    return {
-      projects: this.items
-    }
-  },
-  methods: {
-    updateSource: function (source) {
-      this.$http.get(source)
-        .then(response => {
-          this.items = response.data.items;
-        });
-    }
-  },
-  created: function () {
-    this.updateSource(this.source)
-  },
-  watch: {
-    source: function (val) {
-      this.updateSource(val)
-    }
-  }
+  props: ['project']
 }
