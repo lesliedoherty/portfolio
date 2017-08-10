@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router'
 import Landing from '@/views/partials/landing/Landing'
 import Styles from '@/views/partials/styleguide/Styles'
-import Sandbox from '@/views/partials/sandbox/Sandbox'
-
+import Testimonials from '@/views/partials/testimonials/Testimonials'
+import Tableau from '@/views/partials/tableau/Tableau'
 let router = new VueRouter({
   mode: 'history',
   routes: [
@@ -17,9 +17,14 @@ let router = new VueRouter({
       component: Styles
     },
     {
-      path: '/sandbox',
-      name: 'Sandbox',
-      component: Sandbox
+      path: '/testimonials',
+      name: 'Testimonials',
+      component: Testimonials
+    },
+    {
+      path: '/tableau',
+      name: 'Tableau',
+      component: Tableau
     }
   ]
 })

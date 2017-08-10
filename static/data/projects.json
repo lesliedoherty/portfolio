@@ -46,7 +46,12 @@
            "description": "Managed a multi-discipline team of designers and developers, responsible for delivering a full UI redesign of the Pappa Murphy's website, and associated front-end templates. Worked closely with my counterpart in India, to integrate the front-end templates with a content management system.",
            "challenges": "Remote team was unfamiliar with some of the technologies  and tools used on the Front-End.",
            "solution": "We enabled the India team to move forward by creating templates and example guides from the US-based studio team and building static html for integration with clear guidlines.",
-           "testimonial": [],
+           "testimonial": [ {
+             "name": "",
+             "role" : "",
+             "quote": "",
+             "link": ""
+           }],
            "media": {
              "preview":  "",
              "animation":
@@ -100,7 +105,7 @@
              "Backbone.js",
              "Bootstrap",
              "Node",
-             "Npm,",
+             "Npm",
              "Bower",
              "Express Server",
              "Jenkins"
@@ -138,7 +143,8 @@
              "SASS",
              "Backbone.js",
              "Phonegap",
-             "Javascript"
+             "Javascript",
+             "PHP"
            ]
          },
          {
