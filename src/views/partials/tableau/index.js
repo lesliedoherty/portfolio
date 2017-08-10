@@ -9,12 +9,13 @@ export default {
   methods: {
     initViz: function () {
       var containerDiv = document.getElementById(this.vizDiv)
-      var url = 'https://us-east-1.online.tableau.com/t/portfoliodata/views/tech/Sheet1?:embed=y&:showAppBanner=false&:showShareOptions=true&:display_count=no&:showVizHome=no'
+      var url = 'https://public.tableau.com/views/Technologies_0/Sheet1?:embed=y&:display_count=yes&publish=yes'
       var viz = new tableau.Viz(containerDiv, url)
     }
   },
   created: function () {
-    this.initViz()
+    // Todo revisit later and find answer to vue / table canvas stuff
+    //this.initViz()
   }
 }
 
