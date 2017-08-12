@@ -8,12 +8,9 @@
       </header>
 
       <div class="nav_links">
-        <a class="nav_item" v-smooth-scroll="{ duration: 5000}" href="/#work">
-          Work
-        </a>
-        <a class="nav_item" v-smooth-scroll="{ duration: 3500}" href="/#contact">
-          Contact
-        </a>
+        <router-link class="nav_item" v-smooth-scroll="{ duration: 5000}" :to="{ path: '/'}" replace>Home</router-link>
+        <router-link class="nav_item" v-smooth-scroll="{ duration: 3500}" :to="{ path: 'styleguide'}" replace>Style</router-link>
+
       </div>
     </div>
   </nav>
