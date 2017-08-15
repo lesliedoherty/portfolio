@@ -1,5 +1,7 @@
 import axios from 'axios';
 import ProjectTestimonial from '@/components/project-testimonial/ProjectTestimonial'
+import $ from 'jquery'
+
 export default {
   name: 'Testimonials',
   components: {
@@ -21,5 +23,9 @@ export default {
     .catch(e => {
       this.errors.push(e)
     })
+  },
+
+  methods: {
+
   }
 }

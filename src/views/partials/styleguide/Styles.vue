@@ -2,31 +2,6 @@
     <section class="parent">
         <article class="container">
             <header>
-                <h1>Testing Hero Backgrounds</h1>
-                <h2>IN PROGRESS</h2>
-            </header>
-
-            <p>Pick a class to change the hero background.<br />
-                <small>Coming Soon: Write up of vue and styleguides to help clients and designers visualize in the browser like this.</small></p>
-            <p>For other cool stuff that you can do with a styleguide, check out the <a href="#layouts" v-smooth-scroll="{ duration: 3500}">Layout Options</a></p>
-            <div class="control">
-                <label class="radio" for="one">From June 2017 in <a href="https://goo.gl/maps/U85xFTNvxgn">Langland Bay</a>
-                    <input type="radio" id="one" value="wales" v-model="heroWrapperClass">
-                </label>
-            </div>
-
-            <div class="control">
-                <label class="radio" for="two">My son as a toddler on a hill
-                    <input type="radio" id="two" value="bc" v-model="heroWrapperClass">
-                </label>
-            </div>
-
-
-            <h3>You're viewing: {{ heroWrapperClass }}</h3>
-
-        </article>
-        <article class="container">
-            <header>
                 <h1>{{ msg }}</h1>
                 <p>A little insight in to "How I Work". These are components rendered on the same page for easy reference.
                     Bonus! Quick UI check at breakpoints for the entire site in one place.</p>
@@ -152,7 +127,47 @@
             </aside>
         </article>
         <project-items v-bind:projects="projects"></project-items>
+        <div class="styleguide__break"><h1>In Progress</h1></div>
 
+        <article class="container">
+            <header>
+                <h1>Testing Hero Backgrounds</h1>
+                <h2>IN PROGRESS</h2>
+            </header>
+
+            <p>Pick a class to change the hero background.<br />
+                <small>Coming Soon: Write up of vue and styleguides to help clients and designers visualize in the browser like this.</small></p>
+            <p>For other cool stuff that you can do with a styleguide, check out the <a href="#layouts" v-smooth-scroll="{ duration: 3500}">Layout Options</a></p>
+            <div class="control">
+                <label class="radio" for="one">From June 2017 in <a href="https://goo.gl/maps/U85xFTNvxgn">Langland Bay</a>
+                    <input type="radio" id="one" value="wales" v-model="heroWrapperClass">
+                </label>
+            </div>
+
+            <div class="control">
+                <label class="radio" for="two">My son as a toddler on a hill
+                    <input type="radio" id="two" value="bc" v-model="heroWrapperClass">
+                </label>
+            </div>
+
+
+            <h3>You're viewing: {{ heroWrapperClass }}</h3>
+
+        </article>
+
+        <article class="container">
+            <header>
+                <h1>TABS</h1>
+                <h2>IN PROGRESS: TBD</h2>
+            </header>
+            <h4 id="tab-items">Items to do:</h4>
+            <ul aria-labelledby="tab-items">
+                <li>Create For Loop for tab headers and icon classes</li>
+                <li>Add slots for content</li>
+                <li>Hook up json data for content</li>
+            </ul>
+            <tabs></tabs>
+        </article>
     </section>
 </template>
 
