@@ -173,5 +173,5 @@
 
 <script src='./index.js'></script>
 <style lang="sass" scoped>
-    @import './../../../assets/sass/portfolio/components/styleguide-scoped.sass';
+    @import './../../../assets/sass/portfolio/scoped/styleguide.sass';
 </style>

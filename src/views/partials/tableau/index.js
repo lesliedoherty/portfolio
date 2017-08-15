@@ -1,21 +1,24 @@
 export default {
   name: 'tableau',
-  components: {
-  },
+  components: {},
   data: () => ({
     msg: 'Hello Tableau!',
-    vizDiv: 'vizMe'
+    items: [],
+    errors: []
   }),
-  methods: {
-    initViz: function () {
-      var containerDiv = document.getElementById(this.vizDiv)
-      var url = 'https://public.tableau.com/views/Technologies_0/Sheet1?:embed=y&:display_count=yes&publish=yes'
-      var viz = new tableau.Viz(containerDiv, url)
-    }
-  },
-  created: function () {
-    // Todo revisit later and find answer to vue / table canvas stuff
-    //this.initViz()
+
+  created() {
+    const url = `https://www.tableau.com/data/node/customer_story?items_per_page=3&callback=callOnMe`
+    this.$http.jsonp(url)
+    .then(response => {
+      response.body.forEach(item => {
+        this.items.push(item)
+      })
+    })
+    .catch(e => {
+      this.errors.push(e)
+    })
   }
+
 }
 
