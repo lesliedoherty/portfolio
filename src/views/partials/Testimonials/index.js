@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from 'axios'
 import ProjectTestimonial from '@/components/project-testimonial/ProjectTestimonial'
 import $ from 'jquery'
 

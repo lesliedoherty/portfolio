@@ -1,11 +1,9 @@
 <template>
   <section>
 
-    <app-navigation></app-navigation>
-    <main role="main" aria-labelledby="Label" class="content">
+      <main role="main" aria-labelledby="Label" class="content">
       <router-view></router-view>
    </main>
-   <app-footer></app-footer>
   </section>
 </template>
 
@@ -22,7 +20,7 @@
   }
 </script>
 
-<style lang="sass">
-  @import './../assets/sass/main.sass';
+<style>
+  @import './../assets/tableau2/css/style.css';
 </style>
 

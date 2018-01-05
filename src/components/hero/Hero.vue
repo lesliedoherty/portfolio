@@ -1,12 +1,27 @@
 <template>
-  <section class="hero header" :class="heroClass">
-    <div class="hero-body">
-      <div class="highlight">
-        <span>A passionate speaker and empathetic developer looking to work with great teams, produce beautiful code, and share insights along the way.
-          You can see a bit of how I work <router-link to="/styleguide">at the living style guide,</router-link> or see <a href="https://github.com/lesliedoherty/portfolio">the repo here</a>.
-        </span>
+  <section class="hero" :class="modifier_class">
+    <div :id="curtainId">
+      <div class="hero__content" :style="{ 'background-image': 'url(' + background + ')' }">
+        <div class="hero__content-inner" :class="container">
+            <p v-if="eyebrow" class="hero__eyebrow">
+              {{ eyebrow }}
+            </p>
+            <h1 v-if="title" class="hero__title">
+              {{ title }}
+            </h1>
+            <h5 v-if="subtitle" class="hero__subtitle">
+              {{ subtitle }}
+            </h5>
+
+            <div v-if="content" class="hero__extra-content">
+              {{ content }}
+            </div>
+        </div>
       </div>
     </div>
+      <template v-if="revealHelper">
+      {{revealHelper}}
+      </template>
   </section>
 </template>
 
