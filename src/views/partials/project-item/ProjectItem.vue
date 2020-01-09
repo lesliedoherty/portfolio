@@ -59,8 +59,9 @@
         <template v-if="project.media.animation">
             <div class="project_item--preview" v-if="project.media.animation.frame === 'iPad'">
                 <div class="container project_item--preview-item animation--iPad">
-                    <project-tablet
+                  <project-tablet
                             :image="project.media.animation.image"
+                            :name="project.name"
                     ></project-tablet>
                 </div>
             </div>
@@ -68,13 +69,14 @@
                 <div class="container project_item--preview-item animation--macbook">
                     <project-macbook
                             :image="project.media.animation.image"
+                            :name="project.name"
                     ></project-macbook>
                 </div>
             </div>
         </template>
         <template v-else-if="project.media.preview">
             <div class="project_item--preview" v-if="project.media.preview">
-                <img class="project_item--preview-item" :src="project.media.preview" :alt="project.name">
+                <img class="project_item--preview-item" :src="project.media.preview" :alt="'Image of project with ' + project.name">
             </div>
         </template>
 
