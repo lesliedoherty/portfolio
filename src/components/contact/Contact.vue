@@ -3,7 +3,7 @@
     <vue-form v-if="finished === false" class="contact_form" :state="formstate" @submit.prevent="onSubmit">
 
       <validate auto-label class="field" :class="fieldClassName(formstate.name)">
-        <label class="label" label-for="name">Name</label>
+        <label class="label" for="name">Name</label>
         <div class="control">
           <input class="input" id="name" type="text" name="name" placeholder="Hello! My name is" required v-model="model.name">
         </div>
@@ -15,7 +15,7 @@
 
 
       <validate auto-label class="field" :class="fieldClassName(formstate._replyto)">
-        <label class="label" label-for="email">Email</label>
+        <label class="label" for="email">Email</label>
         <div class="control">
           <input id="email" class="input" type="email" placeholder="Email" name="_replyto" required v-model="model._replyto" >
         </div>
@@ -27,7 +27,7 @@
 
 
       <validate auto-label class="field">
-        <label class="label" label-for="message">Message</label>
+        <label class="label" for="message">Message</label>
         <div class="control">
           <textarea id="message" class="textarea" name="message" placeholder="What can I do for you?" v-model="model.message"></textarea>
         </div>

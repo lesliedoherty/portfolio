@@ -16,15 +16,22 @@ nav
         color: $nav-header-color
         font-weight: $title-weight-bold
         padding: 0.75em 0 0.1667em
-      .global_subtitle
-        color: $nav-header-color_subtitle
-        font-size: $size-5
+      span
+        display: block
+        font-size: $size-3
         line-height: 1.333
     .nav_links .nav_item
-      color: $nav-link-color
+      color: $contrast-text
+      padding: $padding_xxsmall / 2
       font-weight: $weight-bold
       font-size: $size-3
       text-decoration: none
+      background-color: $contrast-background
+      border: 2px solid $contrast-background
+      &:hover
+        color: $contrast-background
+        background-color: white
+
       &:not(:last-of-type)
         margin-right: $margin_xs_small
         +tablet

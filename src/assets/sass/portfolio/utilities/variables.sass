@@ -40,6 +40,10 @@ $red:          hsl(348, 100%, 61%) !default
 $light: $white-ter !default
 $dark: $grey-darker !default
 
+// High Contrast
+$contrast-background: #49556A
+$contrast-text: #ffffff
+
 
 // Invert colors
 
@@ -79,10 +83,10 @@ $danger: $red
 $action: $blue
 
 // links
-$link: $action !default
+$link: $contrast-text !default
 $link-invert: $primary-invert !default
 $link-visited: $purple !default
-$link-hover: $grey-darker !default
+$link-hover: $white !default
 $link-hover-border: $grey-light !default
 $link-focus: $grey-darker !default
 $link-focus-border: $primary !default
@@ -157,6 +161,8 @@ $subtitle-weight:   $weight-light !default
 $space_base: 3em
 $padding_base: $space_base // 3em
 $padding_small: ($space_base / 2) // 1.5em
+$padding_xsmall: ($space_base / 3) // 1em
+$padding_xxsmall: ($space_base / 4) // 0.75em
 $padding_tabs: 1.75em //maths
 $margin_base: $space_base + 1 // 4em
 $margin_small: $margin_base / 2 // 2em
@@ -194,22 +200,22 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default
 // 6. Navigation Bar
 $navbar-background: transparent
 $navbar-height: $space_base
-$nav-link-color: rgba(0, 0, 0, 0.333)
-$nav-header-color: rgba(0, 0, 0, 0.75)
+$nav-link-color: $contrast-background
+$nav-header-color: $contrast-background
 $nav-header-color_subtitle: rgba(0, 0, 0, 0.333)
 
 // 7. Footer
 $footer-background: $background !default
 $footer-height: $space_base
-$footer-link-color: $grey-darker
+$footer-link-color: $contrast-background
 
 // 8. Hero
 $hero-spacing: $margin_xs_small
-$hero-link-color: $grey-dark
+$hero-link-color: $contrast-background
 $hero-text-color-on-background: $white
-$hero-text-background: #8da5cc
+$hero-text-background: $contrast-background
 $hero-background: $light
-$hero-color: $grey-dark
+$hero-color: $white
 $hero-height: 20em
 
 // 9. Inputs

@@ -1,11 +1,11 @@
 <template>
     <header class="project_item--header">
-        <h1 class="global_title">
+        <h3 class="h1 global_title">
             {{ name }}
-        </h1>
-        <h2 class="global_subtitle project_item--subtitle">
+        </h3>
+        <h4 class="h2 global_subtitle project_item--subtitle">
             {{ client }}
-        </h2>
+        </h4>
     </header>
 </template>
 

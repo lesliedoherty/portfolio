@@ -1,12 +1,12 @@
 <template>
-  <section>
+  <div>
 
     <app-navigation></app-navigation>
-    <main role="main" aria-labelledby="Label" class="content">
+    <main role="main" class="content">
       <router-view></router-view>
    </main>
    <app-footer></app-footer>
-  </section>
+  </div>
 </template>
 
 <script>

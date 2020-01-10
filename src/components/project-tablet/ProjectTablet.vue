@@ -1,6 +1,6 @@
 <template>
     <div class="ipad" v-bind:style="{ 'background-image': 'url(' + image + ')' }">
-        <img src="/static/base/ipad-frame.png" />
+        <img src="/static/base/ipad-frame.png" :alt="'iPad with ' + name + ' image on the screen.'" />
     </div>
 </template>
 

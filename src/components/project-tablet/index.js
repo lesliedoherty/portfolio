@@ -1,6 +1,6 @@
 export default {
   name: 'project-tablet',
-  props: ['id', 'image'],
+  props: ['id', 'image', 'name'],
   data () {
     return {
 
