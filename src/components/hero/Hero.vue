@@ -1,5 +1,5 @@
 <template>
-  <section class="hero header" :class="heroClass">
+  <section role="banner" class="hero header" :class="heroClass">
     <div class="hero-body">
       <div class="highlight">
         <span>A passionate speaker and empathetic developer looking to work with great teams, produce beautiful code, and share insights along the way.
