@@ -127,8 +127,20 @@
           th
             border-bottom-width: 0
   a
-   border-bottom: 1px solid $link-focus-border
+   border: 2px solid $white
+   background-color: $contrast-background
+   padding: $padding-xxsmall / 4
+   margin: 0 0.1em
+   &:hover
+     background-color: $white
+     color: $contrast-background
+     border: 2px solid $contrast-background
+   &.no-border
+     border: none
+     background: none
    img
+     border: none
+     background: none
      display: block
      height: auto
      width: 100%
