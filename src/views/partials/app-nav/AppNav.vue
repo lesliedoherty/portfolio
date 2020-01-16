@@ -1,17 +1,18 @@
 <template>
 <div class="hero-wrap wales">
-  <nav class="navbar">
+  <div class="navbar">
     <div class="container">
       <header class="nav_branding content">
         <h1 class="global_title">Leslie Doherty <span>Front-end Architect and Accessibility Developer</span></h1>
       </header>
 
-<!--      <div class="nav_links">-->
-<!--        <router-link class="nav_item" v-smooth-scroll="{ duration: 5000}" :to="{ path: '/'}" replace>Home</router-link>-->
-<!--        <router-link class="nav_item" v-smooth-scroll="{ duration: 3500}" :to="{ path: 'styleguide'}" replace>Styleguide</router-link>-->
-<!--      </div>-->
+     <nav class="nav_links">
+       <a class="nav_item" v-smooth-scroll="{ duration: 4000}" href="#a11y">A11y</a>
+       <a class="nav_item" v-smooth-scroll="{ duration: 4000}" href="#projects">Projects</a>
+       <a class="nav_item" v-smooth-scroll="{ duration: 4000}" href="#contact">Contact</a>
+     </nav>
     </div>
-  </nav>
+  </div>
   <hero
     class="wales"
   ></hero>
