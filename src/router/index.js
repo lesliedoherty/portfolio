@@ -4,7 +4,7 @@ import Styles from '@/views/partials/styleguide/Styles'
 import Testimonials from '@/views/partials/testimonials/Testimonials'
 import Tableau from '@/views/partials/tableau/Tableau'
 let router = new VueRouter({
-  // mode: 'history',
+  mode: 'history',
   routes: [
     {
       path: '/',
