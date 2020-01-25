@@ -1,4 +1,4 @@
-import { Tabs, TabPane } from './src/index.js'
+import { Tabs, TabPane } from './@/index.js'
 
 export default {
   components: {

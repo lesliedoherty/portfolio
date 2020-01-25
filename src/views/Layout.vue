@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <span class="skip"><a class="skip--anchor" href="#content" v-smooth-scroll="{ duration: 1000, offset: -50 }">Skip To Content</a></span>
     <app-navigation></app-navigation>
     <main role="main" class="content">

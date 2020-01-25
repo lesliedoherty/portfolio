@@ -61,5 +61,9 @@ new window.Portfolio.Vue({
   },
   created: function () {
     this.setActiveDataSource('projects')
+  },
+  mounted() {
+    // You'll need this for renderAfterDocumentEvent.
+    document.dispatchEvent(new Event('render-event'))
   }
 })
