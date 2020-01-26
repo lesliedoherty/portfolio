@@ -1,8 +1,8 @@
 import VueRouter from 'vue-router'
-import Landing from '@views/partials/landing/Landing'
-import Styles from '@views/partials/styleguide/Styles'
-import Testimonials from '@views/partials/testimonials/Testimonials'
-import Tableau from '@views/partials/tableau/Tableau'
+import Landing from '@/views/partials/landing/Landing'
+import Styles from '@/views/partials/styleguide/Styles'
+import Testimonials from '@/views/partials/testimonials/Testimonials'
+import Tableau from '@/views/partials/tableau/Tableau'
 let router = new VueRouter({
   mode: 'history',
   routes: [

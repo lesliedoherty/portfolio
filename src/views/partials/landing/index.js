@@ -1,5 +1,5 @@
-import ProjectItems from '@views/partials/project-items/ProjectItems'
-import Contact from '@components/contact/Contact'
+import ProjectItems from '@/views/partials/project-items/ProjectItems'
+import Contact from '@/components/contact/Contact'
 export default {
   name: 'landing',
   components: {
@@ -8,7 +8,7 @@ export default {
   },
   data () {
     return {
-      projects: this.$root.getItems()
+      projects: this.$root.setActiveDataSource('projects')
     }
   }
 }

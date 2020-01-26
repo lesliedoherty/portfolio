@@ -8,12 +8,12 @@ var sources = {
   'examples': {
     'name': 'Layout Example Data',
     'id': 'one',
-    'path': '/static/data/examples.json'
+    'path': '/assets/data/examples.json'
   },
   'projects': {
     'name': 'Project Data',
     'id': 'two',
-    'path': '/static/data/projects.json'
+    'path': '/assets/data/projects.json'
   }
 }
 /* eslint-disable no-new */

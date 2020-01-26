@@ -1,19 +1,29 @@
 var path = require('path')
+var utils = require('./config/utils')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-const srcDir = path.resolve(__dirname, './src'); // resolve project src directory
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+const srcDir = resolve('./src/')
+const assetDir = '/assets/'
+const staticDir = resolve('./static/')
+const buildDir = resolve('./dist/')
 
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: buildDir,
     publicPath: '/',
-    filename: 'build.js'
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -26,27 +36,47 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      // {
+      //   test: /\.css$/,
+      //   use: [
+      //     {
+      //       loader: MiniCssExtractPlugin.loader
+      //     },
+      //     'vue-style-loader',
+      //     'css-loader'
+      //   ]
+      // },
+      // {
+      //   test: /\.sass$/,
+      //   use: [
+      //     'vue-style-loader',
+      //     'css-loader',
+      //     'sass-loader'
+      //   ]
+      // },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          limit: 10000,
+          name: assetDir + 'img/[name].[hash:7].[ext]'
         }
       },
       {
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ]
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'file-loader',
+        options: {
+          limit: 10000,
+          name: assetDir + 'fonts/[name].[hash:7].[ext]'
+        }
       }
     ]
   },
   resolve: {
+    extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@components': path.join(srcDir, 'components'),
-      '@views': path.join(srcDir, 'views'),
+      '@': srcDir,
     }
   },
   devServer: {
@@ -60,6 +90,26 @@ module.exports = {
 }
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
+  module.exports.module.rules = (module.exports.module.rules || []).concat([
+    {
+      test: /\.css$/,
+      use: [
+        {
+          loader: MiniCssExtractPlugin.loader
+        },
+        'vue-style-loader',
+        'css-loader'
+      ]
+    },
+    {
+      test: /\.sass$/,
+      use: [
+        'vue-style-loader',
+        'css-loader',
+        'sass-loader'
+      ]
+    }
+  ])
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
@@ -72,21 +122,30 @@ if (process.env.NODE_ENV === 'production') {
       filename: path.resolve(__dirname, 'dist/index.html'),
       favicon: 'favicon.ico'
     }),
-    new PrerenderSPAPlugin({
-      staticDir: path.join(__dirname, 'dist'),
-      routes: ['/', '/styleguide'],
-
-      renderer: new Renderer({
-        inject: {
-          foo: 'bar'
-        },
-        headless: true,
-        renderAfterDocumentEvent: 'render-event'
-      })
-    })
+    // new PrerenderSPAPlugin({
+    //   staticDir: staticDir,
+    //   routes: ['/', '/styleguide']
+    // }),
+    // extract css into its own file
+    new MiniCssExtractPlugin({
+      filename: assetDir + 'css/[name].[contenthash].css'
+    }),
+    // Compress extracted CSS. We are using this plugin so that possible
+    // duplicated CSS from different components can be deduped.
+    new OptimizeCSSPlugin({
+      cssProcessorOptions: {
+        safe: true
+      }
+    }),
+    // copy custom static assets
+    new CopyWebpackPlugin([{
+        from: staticDir,
+        to: buildDir + assetDir,
+        ignore: ['.*']
+      }])
   ])
 } else {
-  NODE_ENV === 'development'
+  process.env.NODE_ENV === 'development'
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {

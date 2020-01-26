@@ -1,5 +1,5 @@
 import axios from 'axios';
-import ProjectTestimonial from '@components/project-testimonial/ProjectTestimonial'
+import ProjectTestimonial from '@/components/project-testimonial/ProjectTestimonial'
 import $ from 'jquery'
 
 export default {
