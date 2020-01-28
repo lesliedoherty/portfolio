@@ -22,6 +22,7 @@
     "bulma": "^0.4.3",
     "jquery": "^3.4.1",
     "node-sass": "^4.5.3",
+    "prerender-spa-plugin": "^3.4.0",
     "sass-loader": "^6.0.7",
     "vue": "^2.6.11",
     "vue-bulma-tabs": "^1.1.2",
