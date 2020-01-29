@@ -22,15 +22,6 @@
     <project-items v-bind:projects="projects"></project-items>
     </section>
 
-    <section id="contact" class="contact contact-wrapper">
-      <header class="container global_title--section-main">
-        <h2 class="h1 global_subtitle">Contact</h2>
-      </header>
-      <article class="container contact_form-wrapper">
-        <contact></contact>
-        <img src="./../../../../static/base/apple-contact.png" />
-      </article>
-    </section>
   </div>
 </template>
 
