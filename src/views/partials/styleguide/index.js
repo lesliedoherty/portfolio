@@ -6,7 +6,6 @@ import ProjectMacbook from '@/components/project-macbook/ProjectMacbook'
 import Contact from '@/components/contact/Contact'
 import SelectSource from '@/components/select-source/SelectSource'
 import Colors from '@/components/colors/Colors'
-import Tabs from '@/components/tabs/Tabs'
 export default {
   name: 'styles',
   components: {
@@ -17,8 +16,7 @@ export default {
     "project-macbook": ProjectMacbook,
     "contact": Contact,
     "select-source": SelectSource,
-    "colors": Colors,
-    "tabs": Tabs
+    "colors": Colors
   },
   data () {
     return {

@@ -154,20 +154,6 @@
             <h3>You're viewing: {{ heroWrapperClass }}</h3>
 
         </article>
-
-        <article class="container">
-            <header>
-                <h1>TABS</h1>
-                <h2>IN PROGRESS: TBD</h2>
-            </header>
-            <h4 id="tab-items">Items to do:</h4>
-            <ul aria-labelledby="tab-items">
-                <li>Create For Loop for tab headers and icon classes</li>
-                <li>Add slots for content</li>
-                <li>Hook up json data for content</li>
-            </ul>
-            <tabs></tabs>
-        </article>
     </section>
 </template>
 
