@@ -1,24 +1,11 @@
 .contact
-  &.contact-wrapper
-    background-color: $blue-background
-    z-index: 25
-    position: relative
-  &_form-wrapper
-    +tablet
-      display: flex
-      img
-        align-self: flex-end
-        max-width: 35%
-    img
-      +until($desktop)
-        display: none
-  &_form
-    margin-bottom: $margin_small
-    +tablet
-      flex: 2
-      .field
-        max-width: 75%
-  &_form--group
-    flex: 1
-  &_form-finished
-    margin-right: 10%
+  .contact_links
+    li
+      display: inline-block
+      margin: 0 $margin_small
+      &:first-of-type
+        margin-left: 0
+      a
+        color: $turquoise
+        font-size: $size-3
+        border-bottom: 2px solid $blue

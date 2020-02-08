@@ -1,0 +1,31 @@
+@import "./../utilities/variables"
+.project_item--testimonial-wrapper
+  flex-direction: row
+  align-content: space-around
+  .testimonial_image
+    border: 3px solid $grey
+    border-radius: 50%
+    width: 120px
+    height: 120px
+  blockquote
+    background-color: inherit
+    padding: 0 $padding_base
+    font-weight: $weight-semibold
+    font-style: italic
+  cite
+    display: block
+    margin-top: $margin_xsxs_small
+    font-style: normal
+    font-size: $size-1 - 0.20
+    a
+      font-weight: $weight-semibold
+      color: $action
+      border-bottom: 2px solid $blue
+      padding: 5px 5px 0 5px
+    .testimonial_role
+      color: $grey
+      display: block
+      margin-top: 0
+      padding-left: 5px
+.linkedIn-recommendation__list
+  &__header

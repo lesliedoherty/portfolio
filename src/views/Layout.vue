@@ -1,7 +1,8 @@
 <template>
   <div>
-    <span class="skip"><a class="skip--anchor" href="#content" v-smooth-scroll="{ duration: 1000, offset: -50 }">Skip To Content</a></span>
+    <span class="skip"><a class="skip--anchor" href="#content" v-smooth-scroll="{ duration: 1000, offset: -50 }">Skip Navigation</a></span>
     <app-navigation></app-navigation>
+    <hero></hero>
     <main role="main" class="content">
       <router-view></router-view>
    </main>
@@ -12,12 +13,14 @@
 <script>
   import AppFooter from './partials/app-footer/AppFooter.vue'
   import AppNav from './partials/app-nav/AppNav.vue'
+  import Hero from './../components/hero/Hero.vue'
 
   export default {
     name: 'layout-view',
     components: {
       'app-footer': AppFooter,
-      'app-navigation': AppNav
+      'app-navigation': AppNav,
+      'hero': Hero
     }
   }
 </script>

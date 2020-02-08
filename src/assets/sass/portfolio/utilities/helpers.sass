@@ -10,6 +10,30 @@
   width: 100%
   opacity: .9
   z-index: -1
+.background-purple
+  background-color: $action
+  color: $action-invert
+  .global_subtitle
+    color: $indigo
+.background-indigo
+  background-color: $background-indigo
+.featured
+  p
+    font-size: $size-3
+    font-weight: $weight-semibold
+    a
+      color: $turquoise
+      font-weight: $weight-bold
+      border-bottom: 2px solid $blue
+  blockquote
+    padding: 0.2em 1em
+    font-size: $size-5
+
+// Transform Helpers
+.upper
+  text-transform: uppercase
+.bold
+  font-weight: $weight-bold
 
 =clearfix()
  &:before,
@@ -67,7 +91,7 @@
       background-color: $blue
   > :nth-child(2):not(code)
     & p
-      background-color: $pink
+      background-color: $green
   > :nth-child(3)
     & p
       background-color: $yellow

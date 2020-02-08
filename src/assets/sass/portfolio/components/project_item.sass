@@ -1,116 +1,78 @@
-.project_item
-  border-bottom: 1px solid $grey-lighter
+.project_items
   position: relative
   z-index: 10
   transition: all 500ms ease
-  & > .container
-    padding-left: $padding_small
-    padding-right: $padding_small
-  &:nth-child(even)
-    background-color: $background
-  &--header
-    margin-bottom: $margin-small
-  .global_subtitle.project_item--subtitle
-    color: $grey
-  h5
-    font-weight: $weight-bold
-    font-family: $header-font
-    font-size: $size-3
-    margin-bottom: 0
-  .supplimental
-    margin-left: 0
-    display: inline-block
-    ul.project_item--description
-      li
-        &:first-child
-          margin-bottom: 0
-        span.project_item--tech
-          &:not(:last-of-type)
-            &:after
-              content: ", "
-    +tablet
-      display: inline
-    & + dd
-      margin-left: 0.3em
+  &:first-of-type
+    .container
+      padding-top: $padding_xxsmall
+  &:nth-child(odd)
+    background-color: $background-indigo
+  .project_item
+    .project_item--body
+      display: block
+      .project_item--name
+        font-size: $size-4
+        font-weight: $weight-almostbold
+      .project_item--details
+        .project_item--details__label
+          width: 70px
+          text-transform: uppercase
+          font-size: $size-1 - 0.20
+
+      .project_item--content
+        margin: $margin_small 0
+        .project_item--content-wrap, .project_item--content-wrap p
+          page-break-inside: avoid
+          break-inside: avoid
+          &:not(.project_item--content__Description)
+            margin: $margin_small 0
+        h6
+          color: $grey-dark
+          margin-bottom: $margin_xsxs_small
+    .project_item--testimonial-wrapper
+      // by default we will hide the testimonies unless passing in a class that displays them so there's flexibility on where and when to display these
+      display: none
+      visibility: hidden
+    .project_item--preview
+      display: none
+      +tablet
+        display: block
   &--two-col-content, &--animation-center
     +tablet
       .project_item--content
         column-count: 2
         column-gap: $padding_base
-        break-inside:avoid-column
-
-      .supplimental
-        break-inside: avoid
-        -webkit-column-break-inside: avoid
-        column-break-inside: avoid
-        page-break-inside: avoid
-        break-after: always
-
+  &--mobile-image-display
+    .project_item
+      .project_item--preview
+        display: block
   &--image_right, &--image_left
-      +tablet
-        .container
-          +clearfix
-          .project_item--body
-            width: 65%
-            z-index: 15
-        .project_item--preview
-          position: absolute
-          z-index: 12
-          width: 33%
-
+    .container
+      display: flex
   &--image_right
-    .project_item--preview
-      text-align: right
-      +tablet
-        bottom: 0
-        right: 0
+    .container
+      flex-direction: row
   &--image_left
+    .container
+      flex-direction: row-reverse
+      &.project_item--testimonial-wrapper
+        cite
+          text-align: right
     .project_item--body
       +tablet
-        margin-left: 35%
-    .project_item--preview
-      text-align: left
-
-    &:not(.project_item--image_left--bottom)
+        align-content: flex-end
+  &--media-flex-end
+    .project_item
       .project_item--preview
-        +tablet
-         left: 0
-         top: 50%
-         transform: translateY(-50%)
-
-    &--bottom
+        align-self: flex-end
+  &--media-flex-center
+    .project_item
       .project_item--preview
-        +tablet
-          left: 0
-          bottom: 0
-
-  &--two-col-all
-    .container
-      +tablet
-        column-count: 2
-        column-gap: $padding_base
-        blockquote
-          margin-top: $margin_small
-  &--description
-    break-inside: avoid
-    -webkit-column-break-inside: avoid
-    column-break-inside: avoid
-
-
-  &--preview
-    margin-bottom: -($margin_xs_small / 2)
-    +tablet
-
-  &--testimonial-wrapper
-    // by default we will hide the testimonies unless passing in a class that displays them so there's flexibility on where and when to display these
-    display: none
-    visibility: hidden
+        align-self: center
   &--display-testimony
-    // this should happen at the top level and cascade down to the blockquote class
-    .project_item--testimonial-wrapper
-      visibility: visible
-      display: block
-
-  &--content
-    div
-      margin-bottom: $margin_small
+    .project_item
+      .project_item--testimonial-wrapper
+        padding-top: 0
+        visibility: visible
+        display: flex
+        padding-bottom: $padding-base

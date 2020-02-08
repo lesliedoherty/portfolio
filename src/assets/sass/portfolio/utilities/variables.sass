@@ -18,7 +18,7 @@ $black:        hsl(0, 0%, 4%) !default
 $black-bis:    hsl(0, 0%, 7%) !default
 $black-ter:    hsl(0, 0%, 14%) !default
 
-$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-darker:  hsl(0, 0%, 10%) !default
 $grey-dark:    hsl(0, 0%, 29%) !default
 $grey:         hsl(0, 0%, 48%) !default // A7A7A7
 $grey-light:   hsl(0, 0%, 71%) !default
@@ -31,18 +31,14 @@ $white:        hsl(0, 0%, 100%) !default
 $orange:       hsl(14,  100%, 53%) !default
 $yellow:       hsl(48,  100%, 67%) !default
 $green:        hsl(141, 71%,  48%) !default
-$turquoise:    hsl(171, 100%, 41%) !default
-$blue:         hsl(217, 71%,  53%) !default
-$purple:       hsl(271, 100%, 71%) !default
+$turquoise:    #ebf4ff !default
+$blue:         #63b3ed !default
+$purple:       #3c366b !default
 $red:          hsl(348, 100%, 61%) !default
-
+$indigo:      #c3dafe
 
 $light: $white-ter !default
 $dark: $grey-darker !default
-
-// High Contrast
-$contrast-background: #49556A
-$contrast-text: #ffffff
 
 
 // Invert colors
@@ -55,7 +51,7 @@ $blue-invert: findColorInvert($blue) !default
 $purple-invert: findColorInvert($purple) !default
 $red-invert: findColorInvert($red) !default
 
-$primary-invert: $blue !default
+$primary-invert: $purple-invert !default
 $info-invert: $blue-invert !default
 $success-invert: $green-invert !default
 $warning-invert: $yellow-invert !default
@@ -63,31 +59,19 @@ $danger-invert: $red-invert !default
 $light-invert: $dark !default
 $dark-invert: $light !default
 
-
-// themed
-$blue: #8da5cc
-$blue-background: rgb(232,240,243)
-$blue-invert: #fff
-$pink: #ffb3b3
-$pink-invert: #333333
-$orange: #ffdfba
-$yellow: #ffffba
-
-
-
 // applied
 
 $primary: $blue
 $primary-invert: $white
 $danger: $red
-$action: $blue
-
+$action: $purple
+$action-invert: $turquoise
 // links
-$link: $contrast-text !default
+$link: $grey-darker !default
 $link-invert: $primary-invert !default
 $link-visited: $purple !default
 $link-hover: $white !default
-$link-hover-border: $grey-light !default
+$link-hover-border: $link !default
 $link-focus: $grey-darker !default
 $link-focus-border: $primary !default
 
@@ -97,6 +81,7 @@ $link-active-border: $grey-dark !default
 // body
 
 $body-background: #fff !default
+$body-border: $blue
 
 // notifications
 
@@ -107,13 +92,13 @@ $danger: $red !default
 
 // General colors
 
-$background: $white-ter !default
+$background: $white !default
 $border: $grey-lighter !default
 $border-hover: $grey-light !default
-
+$background-indigo: rgba(233, 243, 255, 0.2)
 // Text colors
 
-$text: $grey-dark !default
+$text: $grey-darker !default
 $text-invert: findColorInvert($text) !default
 $text-light: $grey !default
 $text-strong: $grey-darker !default
@@ -126,47 +111,46 @@ $code-background: $background !default
 $pre: $text !default
 $pre-background: $background !default
 
-$colors: ("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert), "blue": ($blue, $blue-invert), "blue-background": ($blue-background, $grey), "pink": ($pink, $pink-invert), "orange": ($orange, $orange-invert), "yellow": ($yellow, $yellow-invert), "green":($green, $green-invert), "purple": ($purple, $purple-invert), "turquoise": ($turquoise, $turquoise-invert), "red": ($red, $red-invert) )
+$colors: ("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert), "blue": ($blue, $blue-invert), "blue-background": ($turquoise, $turquoise-invert), "orange": ($orange, $orange-invert), "yellow": ($yellow, $yellow-invert), "green":($green, $green-invert), "purple": ($purple, $purple-invert), "turquoise": ($turquoise, $turquoise-invert), "red": ($red, $red-invert) )
 // 3. Typography (defined in base/content)
-$family-serif: "adelle"
-$header-font: "adelle-sans", "Georgia", serif
+$family-serif: 'Work Sans'
+$header-font: $family-serif
 $family-primary: $family-serif
 $family-monospace: monospace !default
 $family-code: $family-monospace !default
-$body-size: 16px !default
+$body-size: 18px !default
 $render-mode: optimizeLegibility !default
 $header-line-height: 1.125
 
-$size-1: 1.5rem !default
-$size-2: 1.25rem !default
-$size-3: 1rem !default
-$size-4: 0.9rem !default
-$size-5: 0.755rem !default
-$size-6: $size-5 !default
-$size-7: $size-5 !default
+$size-1: 1rem !default
+$size-2: 1.125rem !default
+$size-3: 1.25rem !default
+$size-4: 1.5rem !default
+$size-5: 1.875rem !default
+$size-6: 2.25rem !default
+$size-7: 3rem !default
 
 $weight-light: 300 !default
 $weight-normal: 400 !default
 $weight-semibold: 500 !default
+$weight-almostbold: 600 !default
 $weight-bold: 700 !default
 
-$title-size:        $size-1 !default
+$title-size:        $size-3 !default
 $title-weight:      $weight-light !default
 $title-weight-bold: $weight-bold !default
 
-$subtitle-size:     $size-2 !default
-$subtitle-weight:   $weight-light !default
 
 // 4. Layout
-$space_base: 3em
-$padding_base: $space_base // 3em
-$padding_small: ($space_base / 2) // 1.5em
-$padding_xsmall: ($space_base / 3) // 1em
-$padding_xxsmall: ($space_base / 4) // 0.75em
+$space_base: 2em
+$padding_base: $space_base // 2em
+$padding_small: ($space_base / 1.5) // 1.5em
+$padding_xsmall: ($space_base / 1.75) // 1em
+$padding_xxsmall: ($space_base / 1.8) // 0.75em
 $padding_tabs: 1.75em //maths
-$margin_base: $space_base + 1 // 4em
-$margin_small: $margin_base / 2 // 2em
-$margin_xs_small: $margin_base / 4 // 1em
+$margin_base: $space_base + 1 // 3em
+$margin_small: $margin_base / 2 // 1em
+$margin_xs_small: $margin_base / 4 // 0.5em
 $margin_xsxs_small: $margin_base / 5
 
 
@@ -200,20 +184,19 @@ $button-shadow-inset: inset 0 1px 2px rgba($black, 0.2) !default
 // 6. Navigation Bar
 $navbar-background: transparent
 $navbar-height: $space_base
-$nav-link-color: $contrast-background
-$nav-header-color: $contrast-background
+$nav-link-color: $link
 $nav-header-color_subtitle: rgba(0, 0, 0, 0.333)
 
 // 7. Footer
 $footer-background: $background !default
 $footer-height: $space_base
-$footer-link-color: $contrast-background
+$footer-link-color: $action
 
 // 8. Hero
-$hero-spacing: $margin_xs_small
-$hero-link-color: $contrast-background
+$hero-spacing: 0
+$hero-link-color: $action
 $hero-text-color-on-background: $white
-$hero-text-background: $contrast-background
+$hero-text-background: none
 $hero-background: $light
 $hero-color: $white
 $hero-height: 20em

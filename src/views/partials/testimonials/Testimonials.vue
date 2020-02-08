@@ -35,5 +35,5 @@
 <script
         src='./index.js'></script>
 <style lang="sass" scoped>
-    @import './../../../assets/sass/portfolio/components/linkedin-testimonials.sass';
+    @import '../../../assets/sass/portfolio/components/testimonials.sass';
 </style>

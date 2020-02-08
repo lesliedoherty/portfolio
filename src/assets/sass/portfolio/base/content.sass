@@ -1,5 +1,5 @@
 *:focus
-  outline: $contrast-background dashed 5px
+  outline: $blue dashed 1px
 
 .skip
   display: flex
@@ -16,7 +16,7 @@
       clip: auto
       overflow: visible
       height: $navbar-height
-      background-color: $contrast-background
+      background-color: $background
       width: 100%
 .content
   +block
@@ -40,11 +40,10 @@
   h5,
   h6
     color: $text-strong
-    font-weight: $weight-normal
+    font-weight: $weight-bold
     line-height: 1.125
   h1, .h1
-    font-size: $size-1
-    font-weight: $weight-bold
+    font-size: $size-5
     margin-bottom: 0.5em
     &:not(:first-child)
       margin-top: 1em
@@ -52,8 +51,7 @@
       &:not(:last-child)
         margin-bottom: 0
   h2, .h2
-    font-size: $size-2
-    font-weight: $weight-bold
+    font-size: $size-4
     margin-bottom: 0.5714em
     &:not(:first-child):not(.global_subtitle)
       margin-top: 1.1428em
@@ -63,30 +61,14 @@
     &:not(:first-child)
       margin-top: 1.3333em
   h4, .h4
-    font-size: $size-4
+    font-size: $size-2
     margin-bottom: 0.8em
   h5, .h5
-    font-size: $size-5
+    font-size: $size-1
     margin-bottom: 0.8888em
   h6, .h6
-    font-size: $size-5
+    font-size: $body-size
     margin-bottom: 1em
-  blockquote
-    background-color: inherit
-    padding: $padding_base
-    font-weight: $weight-semibold
-    font-size: larger
-    font-style: italic
-  cite
-    display: block
-    margin-top: $margin_xs_small
-    font-style: normal
-    font-size: smaller
-    font-family: $header-font
-    span
-      display: block
-      &.testimonial_role
-        color: $grey
   ol
     list-style: decimal outside
     margin-left: 2em
@@ -120,16 +102,11 @@
     width: 100%
     td,
     th
-      border: 1px solid $border
-      border-width: 0 0 1px
-      padding: 0.5em 0.75em
-      vertical-align: top
-    th
-      color: $text-strong
+      border: none
+      padding: 0.1em
+      vertical-align: middle
       text-align: left
-    tr
-      &:hover
-        background-color: $background
+      font-weight: $weight-normal
     thead
       td,
       th
@@ -140,25 +117,14 @@
       th
         border-width: 2px 0 0
         color: $text-strong
-    tbody
-      tr
-        &:last-child
-          td,
-          th
-            border-bottom-width: 0
+
   a
-   border: 2px solid $white
-   background-color: $contrast-background
-   padding: $padding-xxsmall / 4
-   margin: 0 0.1em
-   &:hover
-     background-color: $white
-     color: $contrast-background
-     border: 2px solid $contrast-background
-   &.no-border
-     border: none
-     background: none
-   img
+    color: $action
+    border-bottom: 1px solid $blue
+    &:hover
+      color: $white
+      background-color: $blue
+  img
      border: none
      background: none
      display: block
@@ -173,22 +139,14 @@
     font-size: $size-large
   // global titles. specific title overrides happen in their component sass classes
   // example: to override this in a project_item class, use .global_title.project_item--title
-  .global_title,
-  .global_subtitle
+  .global_title
     +block
-    font-family: $header-font
-    word-break: break-word
-    line-height: $header-line-height
   .global_title
     color: inherit
     font-size: $title-size
     font-weight: $title-weight-bold
-    &--section-main
-      margin-bottom: 0
-      padding-bottom: 0
-      padding-left: $padding-small
-
   .global_subtitle
-    color: inherit
-    font-size: $subtitle-size
-    font-weight: $subtitle-weight
+    font-weight: $title-weight-bold
+    padding-bottom: 0
+    &.soft-gray
+      color: #718096

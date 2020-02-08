@@ -1,62 +1,39 @@
 .hero.header
-  color: $hero-color
+  color: $text
   position: relative
-  padding: $hero-spacing
   min-height: $hero-height
   display: flex
-  flex-direction: column
-  justify-content: center
+  flex-direction: row
+  padding-top: 0
   .hero-body
-    padding: $hero-spacing / 2
-    font-size: $size-2
-    +tablet
-      max-width: 45%
-      margin-left: 10%
-  &.wales, &.bc
-    .hero-body
-      .highlight span
-        line-height: $hero-spacing
-        background-color: $hero-text-background
-        color: $hero-text-color-on-background
-        padding-left: 0
-        position: relative
-        left: $hero-spacing / 2
-        box-shadow: $hero-spacing*+0.5 0 0 $hero-text-background, $hero-spacing*-0.5 0 0 $hero-text-background
-        a
-          color: $hero-link-color
-          background-color: $hero-color
-          border-bottom: 5px solid $hero-link-color
-  &.bc
-    background: no-repeat bottom right url('/static/base/owen-blue-hill-header.jpg')
-    background-size: cover
-  &.default
-    background: $hero-background no-repeat bottom url('/static/base/me-young.png')
-    background-position-x: 85%
-
-  .container
-    display: flex
-    justify-content: center
-    flex-direction: column
-    min-height: $hero-height - 6em
+    padding-top: $padding_small
+    font-size: $size-4
+    flex-grow: 2
+    h2
+      color: $action
+      font-size: $size-6
+      font-weight: $weight-almostbold
+      margin-bottom: $margin-xs_small
+      span
+        display: block
+        margin-top: -0.25em
     p
-      font-size: $size-2
-      padding: $padding_small
+      font-size: $size-3
+      padding-bottom: $padding_xsmall
+      a
+        color: $hero-link-color
+        text-decoration: none
+        font-weight: $weight-bold
+        border-bottom: 2px solid $blue
+        &:hover
+          background-color: $blue
+          color: $white
+  img
+    display: none
     +desktop
-      min-height: $hero-height
-      p
-       width: 75%
-       font-size: $size-1
-    +fullhd
-      p
-        width: 55%
-.hero-wrap
-  // the hero-wrap class  is above the navigation to bring up the background as a test
-  &.wales
-    background: no-repeat top right url('/static/base/wales-header.png')
-    background-size: cover
-
-  &.bc
-    background: no-repeat bottom right url('/static/base/owen-blue-hill-header.jpg')
-    background-size: cover
-
+      display: block
+      width: 300px
+      height: 260px
+      border-radius: 50%
+      align-self: center
 

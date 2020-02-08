@@ -1,21 +1,16 @@
 footer
-  background-color: $footer-background
   min-height: $footer-height
   position: relative
   z-index: 20
+  background-color: $background-indigo
   & .container
     .footer_misc
-      font-size: $size-5
-      flex: 1 0 0
+      font-size: 0.75rem
+      a
+        color: $action
+        font-weight: $weight-bold
+        border-bottom: 2px solid $blue
     +desktop
       display: flex
       justify-content: space-between
       align-items: center
-    .footer_links
-      flex: 2
-      margin-bottom: $margin_xsxs_small
-      &--item
-        color: $footer-link-color
-        text-decoration: none
-        &:not(:last-of-type)
-          margin-right: $margin_small

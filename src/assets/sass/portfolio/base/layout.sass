@@ -1,12 +1,12 @@
 .container
   position: relative
-  padding: $padding_small
+  padding: ($padding_base + 2) $padding_small
   & > .container
-    padding: $padding_small 0
-  +tablet
-    padding: $padding_base
-    & > .container
-      padding: $padding_base 0
+    padding: 0
+  &.padding-bottom__none
+    padding-bottom: 0
+  &.padding-top__none
+    padding-top: 0
   +desktop
     margin: 0 auto
     max-width: $desktop - 40px
@@ -17,6 +17,7 @@
   +fullhd
     max-width: $widescreen - 40px
     width: $widescreen - 40px
-
+  &.global_title--section-main
+    padding-bottom: $padding_xxsmall
 main.content:not(:last-child)
   margin-bottom: 0

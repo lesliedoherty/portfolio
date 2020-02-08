@@ -1,36 +1,35 @@
 .navbar
   background-color: $navbar-background
+  border-top: 8px solid $body-border
   min-height: $navbar-height
   position: relative
   z-index: 10
   & > .container
-    padding: $padding_xxsmall
     display: flex
     justify-content: space-between
     align-items: center
+    padding-top: $padding-small
+    padding-bottom: $padding-small
     .content
       margin-bottom: 0
       text-align: left
       flex-grow: 2
       .global_title
-        color: $nav-header-color
+        font-size: $size-2
+        color: $black
         font-weight: $title-weight-bold
-        padding: 0.75em 0 0.1667em
-      span
-        display: block
-        font-size: $size-4
-        line-height: 1.333
     .nav_links .nav_item
-      color: $contrast-text
-      padding: $padding_xxsmall / 2
-      font-weight: $weight-bold
-      font-size: $size-4
-      text-decoration: none
-      background-color: $contrast-background
-      border: 2px solid $contrast-background
-      &:hover
-        color: $contrast-background
-        background-color: white
+      color: $link
+      padding: $padding-xsmall
+      font-size: $size-1
+      background-color: transparent
+      text-decoration: underline
+      border: 1px solid $background
+      &:hover, &:active
+        color: $action
+        font-weight: $weight-bold
+        background-color: $background-indigo
+        text-decoration: none
 
       &:not(:last-of-type)
         margin-right: $margin_xs_small
