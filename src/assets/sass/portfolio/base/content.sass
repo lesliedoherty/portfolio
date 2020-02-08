@@ -1,5 +1,5 @@
 *:focus
-  outline: $blue dashed 1px
+  outline: $blue dashed 3px
 
 .skip
   display: flex
@@ -10,6 +10,7 @@
     height: 1px
     margin: 0
     padding: 0
+    color: $action
     &:focus
       padding: $padding_base
       position: static
@@ -18,6 +19,9 @@
       height: $navbar-height
       background-color: $background
       width: 100%
+      color: $action
+    &:hover
+      color: $blue
 .content
   +block
   color: $text
@@ -124,6 +128,11 @@
     &:hover
       color: $white
       background-color: $blue
+    &.anchorjs-link
+      border: none
+      &:hover
+        background-color: transparent
+        color: $blue
   img
      border: none
      background: none

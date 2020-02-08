@@ -1,7 +1,7 @@
 {
   "items": [
   {
-    "id": 2,
+    "id": "Pappa-Murphys",
     "name": "Pappa Murphy's",
     "client": "Deloitte",
     "class": [
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": "Vector-Media-Group",
     "name": "Multiple Projects",
     "client": "Vector Media Group",
     "class": [
@@ -79,7 +79,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": "HP-Support",
     "class": [
       "project_items--image_left",
       "project_items--display-testimony",
@@ -117,7 +117,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": "Integris-Dashboard",
     "name": "Integris Dashboard",
     "client": "Integris",
     "role": "Front-end Architect and Advisor",
@@ -148,7 +148,7 @@
     ]
   },
   {
-           "id": 6,
+           "id": "Wells-Fargo",
            "class": [
              "project_items--image_right",
              "project_items--display-testimony" ,
@@ -189,7 +189,7 @@
            ]
          },
   {
-      "id": 1,
+      "id": "INRIX",
       "class": [
         "project_items--image_left",
         "project_items--display-testimony"

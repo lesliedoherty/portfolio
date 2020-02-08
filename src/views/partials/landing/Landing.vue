@@ -2,7 +2,7 @@
   <div id="content">
     <section id="mission" class="featured background-purple">
       <header class="container global_title--section-main">
-        <h3 class="global_subtitle upper">Mission</h3>
+        <h3 data-anchor-id="mission" class="anchor global_subtitle upper">Mission</h3>
       </header>
       <article class="container padding-top__none">
         <p>I prefer to work in a collaborative environment with a team that shares a purpose. My career has always
@@ -16,7 +16,7 @@
     <section id="projects">
       <div class="background-indigo">
         <header class="container global_title--section-main">
-          <h3 class="upper global_subtitle soft-gray">Recent Projects</h3>
+          <h3 data-anchor-id="projects" class="anchor upper global_subtitle soft-gray">Recent Projects</h3>
         </header>
       </div>
     <project-items v-bind:projects="projects"></project-items>
@@ -24,7 +24,7 @@
     <section id="contact" class="contact">
       <div class="background-purple">
         <header class="container global_title--section-main">
-          <h3 class="global_subtitle upper">Get In Touch</h3>
+          <h3 data-anchor-id="contact" class="anchor global_subtitle upper">Get In Touch</h3>
         </header>
         <article class="container padding-top__none">
           <ul class="contact_links">

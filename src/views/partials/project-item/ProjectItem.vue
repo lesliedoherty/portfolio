@@ -2,7 +2,7 @@
     <div class="project_item">
         <div class="container">
             <div class="project_item--body">
-              <h4 class="project_item--name">
+              <h4 :data-anchor-id='project.id' class="project_anchor project_item--name">
                 {{ project.name }}
               </h4>
               <table class="project_item--details">
@@ -14,19 +14,16 @@
               <div class="project_item--content">
                     <project-item-description-item v-if="project.description"
                                                         label="Description"
-                                                        :id="project.id"
                                                         :content="project.description"
                     >
                     </project-item-description-item>
                     <project-item-description-item v-if="project.challenges"
                                                         label="Challenges"
-                                                        :id="project.id"
                                                         :content="project.challenges"
                     >
                     </project-item-description-item>
                     <project-item-description-item v-if="project.solution"
                                                         label="Solution"
-                                                        :id="project.id"
                                                         :content="project.solution"
                     >
                     </project-item-description-item>

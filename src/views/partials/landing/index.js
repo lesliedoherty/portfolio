@@ -1,4 +1,5 @@
 import ProjectItems from '@/views/partials/project-items/ProjectItems'
+
 export default {
   name: 'landing',
   components: {

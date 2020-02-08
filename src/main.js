@@ -4,6 +4,13 @@
 import './bootMeUp'
 import router from './router/index'
 import LayoutView from './views/Layout.vue'
+import AnchorJS from 'anchor-js'
+
+var anchors = new AnchorJS({
+  placement: 'left',
+  icon: '#',
+  visible: 'always'
+})
 var sources = {
   'examples': {
     'name': 'Layout Example Data',
@@ -30,6 +37,9 @@ new window.Portfolio.Vue({
     items: []
   },
   methods: {
+    anchorsInit () {
+      return anchors
+    },
     getAvailableDataSources () {
       return this.sources
     },
@@ -61,5 +71,10 @@ new window.Portfolio.Vue({
   },
   created: function () {
     this.setActiveDataSource('projects')
+  },
+  mounted () {
+    this.anchorsInit()
+    anchors.add('.anchor')
+    console.log(anchors)
   }
 })
