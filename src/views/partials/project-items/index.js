@@ -4,7 +4,7 @@ import AnchorJS from 'anchor-js'
 var project_anchors = new AnchorJS({
   placement: 'left',
   icon: '#',
-  visible: 'always'
+  visible: 'hover'
 })
 export default {
   name: 'project-items',
