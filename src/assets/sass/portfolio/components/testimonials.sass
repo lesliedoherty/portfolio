@@ -1,12 +1,16 @@
 @import "./../utilities/variables"
+@import "./../../bulma/sass/utilities/mixins"
 .project_item--testimonial-wrapper
   flex-direction: row
   align-content: space-around
   .testimonial_image
-    border: 3px solid $grey
-    border-radius: 50%
-    width: 120px
-    height: 120px
+    display: none
+    +tablet
+      display: block
+      border: 3px solid $grey
+      border-radius: 50%
+      width: 120px
+      height: 120px
   blockquote
     background-color: inherit
     padding: 0 $padding_base
@@ -27,5 +31,3 @@
       display: block
       margin-top: 0
       padding-left: 5px
-.linkedIn-recommendation__list
-  &__header

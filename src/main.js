@@ -8,8 +8,7 @@ import AnchorJS from 'anchor-js'
 
 var anchors = new AnchorJS({
   placement: 'left',
-  icon: '#',
-  visible: 'always'
+  icon: '#'
 })
 var sources = {
   'examples': {
