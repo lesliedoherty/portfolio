@@ -1,5 +1,5 @@
 <template>
-  <section id="a11y" role="banner" class="container hero header" :class="heroClass">
+  <section id="a11y" class="container hero header" :class="heroClass">
     <div class="hero-body">
       <h2 data-anchor-id="a11y" class="anchor">
         Front-end architect

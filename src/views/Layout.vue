@@ -2,8 +2,8 @@
   <div>
     <span class="skip"><a class="skip--anchor" href="#a11y" v-smooth-scroll="{ duration: 1000, offset: -50 }">Skip Navigation</a></span>
     <app-navigation></app-navigation>
-    <hero></hero>
     <main role="main" class="content">
+      <hero></hero>
       <router-view></router-view>
    </main>
    <app-footer></app-footer>

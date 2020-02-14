@@ -1,6 +1,6 @@
 <template>
   <div :class="'project_item--content__' + label" class="project_item--content-wrap">
-  <h6>{{ label }} </h6>
+  <h5>{{ label }} </h5>
         <p>{{ content }}</p>
     </div>
 </template>
