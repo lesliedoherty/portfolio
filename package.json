@@ -21,7 +21,7 @@
     "anchor-js": "^4.2.2",
     "axios": "^0.18.1",
     "bulma": "^0.4.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.5.3",
     "prerender-spa-plugin": "^3.4.0",
     "sass-loader": "^6.0.7",
