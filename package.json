@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "anchor-js": "^4.2.2",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bulma": "^0.4.3",
     "jquery": "^3.4.1",
     "node-sass": "^4.5.3",
